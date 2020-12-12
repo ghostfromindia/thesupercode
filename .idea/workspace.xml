@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fb4b42f-7fa8-405b-ae8b-1bfc75d7ad83" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Login/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Login/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/login/include/error.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/login/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/login/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login/register.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,7 +26,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoginController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Login/LoginController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
@@ -77,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+            <state relative-caret-position="391">
+              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -196,11 +193,11 @@
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/resources/views/admin/layout/base.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/YTChannelController.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/login/login.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/login/register.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Login/LoginController.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -536,11 +533,18 @@
       <option name="project" value="LOCAL" />
       <updated>1607791107389</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Password error notification">
+      <created>1607791323899</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607791323899</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43183000" />
+    <option name="totallyTimeSpent" value="43253000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -613,7 +617,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="login update" />
     <MESSAGE value="cron job sync file" />
-    <option name="LAST_COMMIT_MESSAGE" value="cron job sync file" />
+    <MESSAGE value="Password error notification" />
+    <option name="LAST_COMMIT_MESSAGE" value="Password error notification" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -956,13 +961,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
@@ -1012,6 +1010,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
         </state>
       </provider>
     </entry>
