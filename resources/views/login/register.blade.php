@@ -28,7 +28,7 @@
                                         </div>
                                     </div>
                                 </div><!-- .nk-block-head -->
-                                @include('login.include.error')
+                                @include('admin.include.notifications')
                                 <form action="{{url('register')}}" method="post" id="login-form"> @csrf
                                     <div class="form-group">
                                         <label class="form-label" for="name">Name</label>

@@ -29,6 +29,7 @@ class LoginController extends Controller
         if (Auth::attempt($request->only('email', 'password'))) {
             return redirect('/');
         }else{
+            session()->flash('error','Please enter a valid username and password to login');
             return redirect('login');
         }
     }
