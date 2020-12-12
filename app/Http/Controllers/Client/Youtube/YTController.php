@@ -15,7 +15,7 @@ class YTController extends Controller
         $channels = DB::table('youtube_channels as ch')
             ->leftjoin('youtube_categories as yc','yc.id','=','ch.primary_category')
             ->leftjoin('youtube_statistics as ys','ys.channel_id','=','ch.id')
-            ->select('ch.id', 'channel_name', 'ch.channel_id','category_name','ch.updated_at','subscriber_count','ch.slug as chslug','yc.slug as ycslug')->distinct('ch.channel_name')
+            ->select('ch.id', 'channel_name', 'ch.channel_id','category_name','ch.updated_at','subscriber_count','ch.slug as chslug','yc.slug as ycslug')->groupBy('ch.channel_name')
             ->orderby('subscriber_count','DESC')->get();
 
         return view('client.modules.youtube.home',compact('channels'));
@@ -25,7 +25,7 @@ class YTController extends Controller
         $channels = DB::table('youtube_channels as ch')
             ->leftjoin('youtube_categories as yc','yc.id','=','ch.primary_category')
             ->leftjoin('youtube_statistics as ys','ys.channel_id','=','ch.id')
-            ->select('ch.id', 'channel_name', 'ch.channel_id','category_name','ch.updated_at','subscriber_count','ch.slug as chslug','yc.slug as ycslug')->distinct('ch.channel_name')
+            ->select('ch.id', 'channel_name', 'ch.channel_id','category_name','ch.updated_at','subscriber_count','ch.slug as chslug','yc.slug as ycslug')->groupBy('ch.channel_name')
             ->where('yc.slug',$slug)
             ->orderby('subscriber_count','DESC')->get();
 
