@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Client\Youtube;
 use App\Http\Controllers\Controller;
 use App\Models\Youtube\Categories;
 use App\Models\Youtube\Channels;
+use App\Models\Youtube\Statistics;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -39,7 +40,9 @@ class YTController extends Controller
             ->where('ch.slug',$slug)
             ->orderby('subscriber_count','DESC')->first();
 
-        return view('client.modules.youtube.channel',compact('channel'));
+        $stats = Statistics::where('channel_id',$channel->id)->orderby('statistics_date','DESC')->get();
+
+        return view('client.modules.youtube.channel',compact('channel','stats'));
     }
 
     public function make_category_slug(){

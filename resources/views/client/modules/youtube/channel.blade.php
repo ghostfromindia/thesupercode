@@ -16,8 +16,26 @@
                 {{subscriberFormat($channel->subscriber_count)}}
             </div>
             <hr>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                @foreach($stats as $obj)
+                    <div class="col-md-3">
+                        <div>
 
-
+                            DATE : {{\Carbon\Carbon::parse($obj->statistics_date)->format('d F Y')}}
+                            <br>
+                            @if($obj->yesterday())
+                            New views : {{$obj->view_count - $obj->yesterday()->view_count}}
+                            @else
+                            Total view : {{$obj->view_count}}
+                            @endif
+                            <br>
+                            Subscribes : {{subscriberFormat($obj->subscriber_count)}}
+                        </div>
+                    </div>
+                @endforeach
+            </div>
         </div>
     </div>
 

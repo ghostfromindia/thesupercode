@@ -4,6 +4,8 @@
     <list default="true" id="9fb4b42f-7fa8-405b-ae8b-1bfc75d7ad83" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Client/Youtube/YTController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/Youtube/YTController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Youtube/Statistics.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Youtube/Statistics.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/client/modules/youtube/channel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/modules/youtube/channel.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="YTController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="YTController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Client/Youtube/YTController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="26" column="172" selection-start-line="26" selection-start-column="172" selection-end-line="26" selection-end-column="172" />
+            <state relative-caret-position="432">
+              <caret line="44" column="77" selection-start-line="44" selection-start-column="72" selection-end-line="44" selection-end-column="77" />
               <folding>
                 <element signature="e#55#91#0#PHP" expanded="true" />
               </folding>
@@ -59,11 +61,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="channel.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="channel.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/client/modules/youtube/channel.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+            <state relative-caret-position="391">
+              <caret line="29" column="33" lean-forward="true" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Statistics.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Models/Youtube/Statistics.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="31" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="31" />
+              <folding>
+                <element signature="e#38#56#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,15 +116,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="734">
               <caret line="66" selection-start-line="66" selection-end-line="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/client/modules/youtube/home.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="183" selection-start-line="30" selection-start-column="183" selection-end-line="30" selection-end-column="183" />
             </state>
           </provider>
         </entry>
@@ -166,7 +171,6 @@
         <option value="$PROJECT_DIR$/app/Http/Middleware/Admin.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/PageController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/pages/home.blade.php" />
-        <option value="$PROJECT_DIR$/app/Models/Youtube/Statistics.php" />
         <option value="$PROJECT_DIR$/app/Models/Youtube/YoutubeCategoryMap.php" />
         <option value="$PROJECT_DIR$/app/Models/BaseController.php" />
         <option value="$PROJECT_DIR$/public/admin-assets/js/scripts.js" />
@@ -199,10 +203,11 @@
         <option value="$PROJECT_DIR$/resources/views/client/modules/youtube/home.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Client/YouTube/YTController.php" />
         <option value="$PROJECT_DIR$/resources/views/client/layout/base.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/client/modules/youtube/channel.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/Youtube/YTController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Client/Youtube/YTController.php" />
+        <option value="$PROJECT_DIR$/app/Models/Youtube/Statistics.php" />
+        <option value="$PROJECT_DIR$/resources/views/client/modules/youtube/channel.blade.php" />
       </list>
     </option>
   </component>
@@ -599,11 +604,18 @@
       <option name="project" value="LOCAL" />
       <updated>1607801129570</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="distinct data">
+      <created>1607801492525</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1607801492525</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50522000" />
+    <option name="totallyTimeSpent" value="51391000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -682,7 +694,8 @@
     <MESSAGE value="added by data" />
     <MESSAGE value="front end" />
     <MESSAGE value="front end - issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="front end - issues" />
+    <MESSAGE value="distinct data" />
+    <option name="LAST_COMMIT_MESSAGE" value="distinct data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -831,13 +844,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="65" selection-start-line="22" selection-start-column="65" selection-end-line="22" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Youtube/Statistics.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -1020,13 +1026,6 @@
     <entry file="file://$PROJECT_DIR$/resources/views/client/modules/youtube/category.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/client/modules/youtube/channel.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Client/Youtube/YTController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -1051,6 +1050,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Client/Youtube/YTController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="44" column="77" selection-start-line="44" selection-start-column="72" selection-end-line="44" selection-end-column="77" />
+          <folding>
+            <element signature="e#55#91#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/YTChannelController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -1061,13 +1070,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Client/Youtube/YTController.php">
+    <entry file="file://$PROJECT_DIR$/app/Models/Youtube/Statistics.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="26" column="172" selection-start-line="26" selection-start-column="172" selection-end-line="26" selection-end-column="172" />
+        <state relative-caret-position="187">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="31" />
           <folding>
-            <element signature="e#55#91#0#PHP" expanded="true" />
+            <element signature="e#38#56#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/client/modules/youtube/channel.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="29" column="33" lean-forward="true" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
         </state>
       </provider>
     </entry>
