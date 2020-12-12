@@ -22,7 +22,7 @@ class Categories extends Model
 
     protected $table = 'youtube_categories';
 
-    protected $fillable = ['category_name'];
+    protected $fillable = ['category_name','slug'];
     protected $dates = ['created_at','updated_at'];
 
     protected function setRules()

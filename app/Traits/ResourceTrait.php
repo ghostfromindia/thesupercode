@@ -99,7 +99,7 @@ trait ResourceTrait {
 	}
 
     public function edit($id) {
-        $id = decrypt($id);
+         $id = decrypt($id);
         if($obj = $this->model->find($id)){
             return view($this->views . '.form')->with('obj', $obj);
         } else {

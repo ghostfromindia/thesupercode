@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('youtube-analysis','Client\YouTube\YTController@home');
+Route::get('youtube-analysis/category/{slug}','Client\YouTube\YTController@category');
+Route::get('youtube-analysis/channel/{slug}','Client\YouTube\YTController@channel');
+Route::get('slug-generator','Client\YouTube\YTController@make_category_slug');
+
 
 Route::middleware(['webroutes'])->group(function () {
 
