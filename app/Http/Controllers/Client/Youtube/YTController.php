@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Client\YouTube;
+namespace App\Http\Controllers\Client\Youtube;
 
 use App\Http\Controllers\Controller;
 use App\Models\Youtube\Categories;
