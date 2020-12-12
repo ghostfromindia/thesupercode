@@ -18,6 +18,10 @@ Route::middleware(['webroutes'])->group(function () {
 
     Route::get('/', 'Client\PageController@home');
 
+    //for cron jobs
+    Route::get('ytchannel/sync-statistics', 'YTChannelController@sync_statistics')->name('admin.ytchannel.sync_statistics');
+
+
 
     Route::get('login', 'Login\LoginController@login');
     Route::get('register', 'Login\LoginController@register');
@@ -44,7 +48,6 @@ Route::middleware(['webroutes'])->group(function () {
             Route::post('ytchannel/store', 'YTChannelController@store')->name('admin.ytchannel.store');
             Route::post('ytchannel/update', 'YTChannelController@update')->name('admin.ytchannel.update');
 
-            Route::get('ytchannel/sync-statistics', 'YTChannelController@sync_statistics')->name('admin.ytchannel.sync_statistics');
 
             // Youtube categories
             Route::get('ytcategory', 'YTCategoryController@index')->name('admin.ytcategory.index');
