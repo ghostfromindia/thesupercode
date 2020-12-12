@@ -22,6 +22,8 @@
                                     {{Form::open(['url' => route('admin.ytchannel.store'), 'method' => 'post','enctype' => 'multipart/form-data', 'id'=>'ytchannelForm'])}}
                                 @endif
 
+                                <input type="hidden" name="created_by" value="{{Auth::user()->id}}">
+
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <div class="form-group">

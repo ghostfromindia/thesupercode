@@ -21,7 +21,7 @@ class Channels extends Model
 
     protected $table = 'youtube_channels';
 
-    protected $fillable = ['channel_name','channel_id','channel_user_name','channel_profile_image','primary_category'];
+    protected $fillable = ['channel_name','channel_id','channel_user_name','channel_profile_image','primary_category','created_by'];
     protected $dates = ['created_at','updated_at'];
 
 
