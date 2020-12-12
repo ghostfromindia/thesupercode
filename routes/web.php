@@ -19,7 +19,7 @@ Route::middleware(['webroutes'])->group(function () {
     Route::get('/', 'Client\PageController@home');
 
     //for cron jobs
-    Route::get('ytchannel/sync-statistics', 'YTChannelController@sync_statistics')->name('admin.ytchannel.sync_statistics');
+    Route::get('ytchannel/sync-statistics', 'Admin\YTChannelController@sync_statistics')->name('admin.ytchannel.sync_statistics');
 
 
 
