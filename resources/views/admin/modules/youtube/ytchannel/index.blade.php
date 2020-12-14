@@ -47,7 +47,7 @@
         $('#page-heading').html('Youtube Channels');
 
         var my_columns = [
-            {data: null, name: 'id'},
+            {data: null, name: 'ch.id'},
             {data: 'channel_name', name: 'channel_name'},
             {data: 'subscriber_count', name: 'subscriber_count'},
             {data: 'category_name', name: 'category_name'},
