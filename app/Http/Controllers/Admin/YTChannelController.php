@@ -112,7 +112,6 @@ class YTChannelController extends BaseController
         $response = $service->subscriptions->listSubscriptions('snippet,contentDetails', $queryParams);
         $i=0;
         foreach ($response->items as $obj){
-            echo ++$i.' - '.$obj->snippet->title.'('.$obj->snippet->resourceId->channelId.')<br>';
 
             $data['channel_name'] = $obj->snippet->title;
             $data['slug'] = $this->slugify($obj->snippet->title);
@@ -131,6 +130,8 @@ class YTChannelController extends BaseController
 
         if(!empty($response->getNextPageToken())){
             $this->sync_channels($response->getNextPageToken());
+        }else{
+            return redirect('/');
         }
 
 

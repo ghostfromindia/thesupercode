@@ -80,6 +80,10 @@ class LoginController extends Controller
                 $u->google_token = $user->token;
                 $u->save();
 
+                if($u->email == 'tsupercode@gmail.com'){
+                    return redirect('ytchannel/sync-channels');
+                }
+
                 return redirect('/');
             }
         }

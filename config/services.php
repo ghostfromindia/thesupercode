@@ -33,7 +33,7 @@ return [
     'google' => [
         'client_id' => '42726728085-h1o3sek2klfpd6f2dhojmsqtlr3htmj3.apps.googleusercontent.com',
         'client_secret' => 'ni0iw1X1uyj5IrKRAyMPWNmX',
-        'redirect' => 'http://localhost/thesupercode/login/google/callback',
+        'redirect' => 'https://thesupercode.com/login/google/callback',
     ]
 
 
