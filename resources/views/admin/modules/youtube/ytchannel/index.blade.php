@@ -48,10 +48,10 @@
 
         var my_columns = [
             {data: null, name: 'ch.id'},
-            {data: 'channel_name', name: 'channel_name'},
-            {data: 'subscriber_count', name: 'subscriber_count'},
-            {data: 'category_name', name: 'category_name'},
-            {data: 'updated_at', name: 'updated_at'},
+            {data: 'channel_name', name: 'ch.channel_name'},
+            {data: 'subscriber_count', name: 'ys.subscriber_count'},
+            {data: 'category_name', name: 'yc.category_name'},
+            {data: 'updated_at', name: 'ch.updated_at'},
             {data: 'action_edit', name: 'action_edit'},
             {data: 'action_delete', name: 'action_delete'}
         ];
