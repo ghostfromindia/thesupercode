@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Taviraj&display=swap');
 body{
     background: #f7f9fa;
+    font-family: 'Chivo', sans-serif;
 }
 
 h1{
     font-weight: lighter;
+    font-family: 'Taviraj', serif;
+}
+h2,h3,h4,h5,h6{
+    font-family: 'Taviraj', serif;
 }
 .pad-height{
     margin: 20px 0px;

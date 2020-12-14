@@ -28,7 +28,11 @@
 
                     <tr>
                         <td>{{$loop->index+1}}</td>
-                        <td><span class="badge"><a href="{{url('youtube-analysis/category/'.$obj->ycslug)}}">{{$obj->category_name}}</a></span><a href="{{url('youtube-analysis/channel/'.$obj->chslug)}}">{{$obj->channel_name}}</a></td>
+                        <td><span class="badge">
+                                <a href="{{url('youtube-analysis/category/'.$obj->ycslug)}}">{{$obj->category_name}}</a></span>
+                            <a href="https://youtube.com/channel/{{$obj->channel_id}}" target="_blank"><img src="https://img.icons8.com/color/48/000000/youtube.png" width="20px"/></a>
+                            <a href="{{url('youtube-analysis/channel/'.$obj->chslug)}}">{{$obj->channel_name}}</a>
+                        </td>
                         <td>{{subscriberFormat($obj->subscriber_count)}}</td>
                     </tr>
 

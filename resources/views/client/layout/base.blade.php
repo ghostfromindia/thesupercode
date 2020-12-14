@@ -64,7 +64,7 @@
             }
 
             .sub-count{
-                font-size: 160px;
+                font-size: 60px;
                 font-weight: 100;
                 display: contents;
                 padding: 0;
