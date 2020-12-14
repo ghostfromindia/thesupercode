@@ -72,9 +72,9 @@ abstract class BaseController extends Controller {
         // transliterate
 
 
-        if(iconv('utf-8', 'us-ascii//TRANSLIT', $text)){
+        try{
             $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
-        }else{
+        }catch (\Exception $e){
             $text = rand(11111111111111111,999999999999999999);
         }
 
