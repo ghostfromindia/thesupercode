@@ -7,6 +7,7 @@ use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Laravel\Socialite\Facades\Socialite;
 
 class LoginController extends Controller
 {
@@ -47,5 +48,43 @@ class LoginController extends Controller
         }else{
             abort(500);
         }
+    }
+
+    public function redirectToProvider($website)
+    {
+        return Socialite::driver($website)->scopes(['https://www.googleapis.com/auth/youtube.readonly'])->redirect();
+    }
+
+    public function handleProviderCallback($website)
+    {
+        $user = Socialite::driver($website)->user();
+
+
+
+        if(!empty($user->email)){
+            $u = User::where('email',$user->email)->first();
+            if(!$u){
+                $u = new User();
+                $u->is_google_login = 1;
+                $u->google_token = $user->token;
+                $u->name = $user->name;
+                $u->email = $user->email;
+                $u->password = Hash::make(rand(1111,9999).$user->email.rand(1111,2222));
+                $u->save();
+            }
+
+            if (Auth::loginUsingId($u->id)) {
+
+
+                $u->is_google_login = 1+$u->google_login;
+                $u->google_token = $user->token;
+                $u->save();
+
+                return redirect('/');
+            }
+        }
+        session()->flash('error','Google login failed, please try other options');
+        return redirect('login');
+
     }
 }

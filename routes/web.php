@@ -21,10 +21,14 @@ Route::get('slug-generator','Client\Youtube\YTController@make_category_slug');
 
 Route::middleware(['webroutes'])->group(function () {
 
+    Route::get('login/{website}', 'Login\LoginController@redirectToProvider');
+    Route::get('login/{website}/callback', 'Login\LoginController@handleProviderCallback');
+
     Route::get('/', 'Client\PageController@home');
 
     //for cron jobs
     Route::get('ytchannel/sync-statistics', 'Admin\YTChannelController@sync_statistics')->name('admin.ytchannel.sync_statistics');
+    Route::get('ytchannel/sync-channels', 'Admin\YTChannelController@sync_channels');
 
 
 

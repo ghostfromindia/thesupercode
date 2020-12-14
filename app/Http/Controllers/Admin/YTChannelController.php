@@ -9,7 +9,9 @@ use App\Models\Youtube\Statistics;
 use App\Traits\ResourceTrait;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Laravel\Socialite\One\User;
 use Yajra\DataTables\DataTables;
 
 class YTChannelController extends BaseController
@@ -69,7 +71,12 @@ class YTChannelController extends BaseController
                     $stats = new Statistics();
                 }
                 $stats->channel_id = $obj->id;
-                $stats->subscriber_count = $data->items[0]->statistics->subscriberCount;
+                if(!empty($data->items[0]->statistics->subscriberCount)){
+                    $stats->subscriber_count = $data->items[0]->statistics->subscriberCount;
+                }else{
+                    $stats->subscriber_count = 0;
+                }
+
                 $stats->view_count = $data->items[0]->statistics->viewCount;
                 $stats->hidden_subscriber_count = $data->items[0]->statistics->hiddenSubscriberCount;
                 $stats->video_count = $data->items[0]->statistics->videoCount;
@@ -79,5 +86,54 @@ class YTChannelController extends BaseController
                 echo 'Channel id of <b>'.$obj->channel_name.'</b> is not valid<br>';
             }
         }
+    }
+
+    public function sync_channels($pageToken = null){
+        $client = new \Google_Client();
+        $client->setAccessToken(Auth::user()->google_token);
+
+        // Define service object for making API requests.
+        $service = new \Google_Service_YouTube($client);
+
+        if(!empty($pageToken)){
+            $queryParams = [
+                'mine' => true,
+                'maxResults' => 50,
+                'pageToken' => $pageToken
+            ];
+        }else{
+            $queryParams = [
+                'mine' => true,
+                'maxResults' => 50
+            ];
+        }
+
+
+        $response = $service->subscriptions->listSubscriptions('snippet,contentDetails', $queryParams);
+        $i=0;
+        foreach ($response->items as $obj){
+            echo ++$i.' - '.$obj->snippet->title.'('.$obj->snippet->resourceId->channelId.')<br>';
+
+            $data['channel_name'] = $obj->snippet->title;
+            $data['slug'] = $this->slugify($obj->snippet->title);
+            $data['channel_id'] = $obj->snippet->resourceId->channelId;
+            $data['channel_user_name'] = $obj->snippet->title;
+            $data['created_by'] = 2215;
+
+            $channel = Channels::where('channel_id',$obj->snippet->resourceId->channelId)->first();
+            if(!$channel){
+                $channel = new Channels();
+                $channel->fill($data);
+                $channel->save();
+            }
+
+        }
+
+        if(!empty($response->getNextPageToken())){
+            $this->sync_channels($response->getNextPageToken());
+        }
+
+
+
     }
 }
