@@ -1,13 +1,21 @@
 @extends('client.layout.base')
 
+@section('title','Top Subscribed '.$category->category_name.' youtube channels in Kerala')
+@php $subs = ''; @endphp
+@foreach($channels as $obj)
+    @if($loop->index < 3)
+    @php $subs .= $obj->channel_name.', '; @endphp
+    @endif
+@endforeach
+
+@section('description','Get the list of top subscribed youtube channels like '.$subs)
+@section('canonical',url()->current())
+@section('url',url()->current())
+
 @section('content')
 
-    <div class="dark-banner">
-        We are in beta mode, will be live soon. like cyberpunk 2077 soon
-    </div>
-
     <div class="container" align="center">
-        <h1 class="pad-height">Kerala : Top 20 Kerala youtube channels <img src="https://img.icons8.com/emoji/48/000000/fire.png"/></h1>
+        <h1 class="pad-height">Top Subscribed {{$category->category_name}} youtube channels in Kerala<img src="https://img.icons8.com/emoji/48/000000/fire.png"/></h1>
     </div>
 
 

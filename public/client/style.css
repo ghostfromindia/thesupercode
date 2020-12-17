@@ -5,13 +5,6 @@ body{
     font-family: 'Chivo', sans-serif;
 }
 
-h1{
-    font-weight: lighter;
-    font-family: 'Taviraj', serif;
-}
-h2,h3,h4,h5,h6{
-    font-family: 'Taviraj', serif;
-}
 .pad-height{
     margin: 20px 0px;
 }

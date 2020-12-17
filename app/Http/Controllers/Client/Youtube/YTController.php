@@ -23,6 +23,10 @@ class YTController extends Controller
     }
 
     public function category($slug){
+        $category = Categories::where('slug',$slug)->first();
+        if(!$category){
+            abort(404);
+        }
         $channels = DB::table('youtube_channels as ch')
             ->leftjoin('youtube_categories as yc','yc.id','=','ch.primary_category')
             ->leftjoin('youtube_statistics as ys','ys.channel_id','=','ch.id')
@@ -30,7 +34,9 @@ class YTController extends Controller
             ->where('yc.slug',$slug)
             ->orderby('subscriber_count','DESC')->get();
 
-        return view('client.modules.youtube.category',compact('channels'));
+
+
+        return view('client.modules.youtube.category',compact('channels','category'));
     }
 
     public function channel($slug){

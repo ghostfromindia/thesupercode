@@ -1,5 +1,11 @@
 @extends('client.layout.base')
 
+@section('title','Youtube channel analysis of '.$channel->channel_name)
+@section('description',$channel->channel_name.' currently having '.subscriberFormat($channel->subscriber_count).' subscribers on '.date('Y-m-d'))
+@section('canonical',url()->current())
+@section('url',url()->current())
+
+
 @section('content')
 
 
