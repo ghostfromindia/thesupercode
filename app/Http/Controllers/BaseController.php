@@ -19,7 +19,7 @@ use App\Mail\Message;
 abstract class BaseController extends Controller {
 
     protected $route, $views;
-    public $youtube_key = 'AIzaSyAlCVIguKDuNU1v065tXUiDmg35AgPZUsY';
+    public $youtube_key = 'AIzaSyDGaBpTCZtFG2iMlHIpcIZLJJwLUz6Mq6A';
 
     /**
      * Create a new controller instance.
