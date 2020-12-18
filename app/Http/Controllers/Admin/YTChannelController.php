@@ -60,30 +60,36 @@ class YTChannelController extends BaseController
 
         foreach ($channels as $obj){
 
-            $data= json_decode(file_get_contents('https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics,status,id&id='.$obj->channel_id.'&key='.$this->youtube_key));
+            $stats = Statistics::where('channel_id',$obj->id)->where('statistics_date',$today)->first();
+
+            if(!$stats){
+
+                $data= json_decode(file_get_contents('https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics,status,id&id='.$obj->channel_id.'&key='.$this->youtube_key));
 
 
 
-            if(!empty($data->items[0])){
+                if(!empty($data->items[0])){
 
-                $stats = Statistics::where('channel_id',$obj->id)->where('statistics_date',$today)->first();
-                if(!$stats){
-                    $stats = new Statistics();
-                }
-                $stats->channel_id = $obj->id;
-                if(!empty($data->items[0]->statistics->subscriberCount)){
-                    $stats->subscriber_count = $data->items[0]->statistics->subscriberCount;
+                    $stats = Statistics::where('channel_id',$obj->id)->where('statistics_date',$today)->first();
+                    if(!$stats){
+                        $stats = new Statistics();
+                    }
+                    $stats->channel_id = $obj->id;
+                    if(!empty($data->items[0]->statistics->subscriberCount)){
+                        $stats->subscriber_count = $data->items[0]->statistics->subscriberCount;
+                    }else{
+                        $stats->subscriber_count = 0;
+                    }
+
+                    $stats->view_count = $data->items[0]->statistics->viewCount;
+                    $stats->hidden_subscriber_count = $data->items[0]->statistics->hiddenSubscriberCount;
+                    $stats->video_count = $data->items[0]->statistics->videoCount;
+                    $stats->statistics_date = Carbon::now()->format('Y-m-d');
+                    $stats->save();
                 }else{
-                    $stats->subscriber_count = 0;
+                    echo 'Channel id of <b>'.$obj->channel_name.'</b> is not valid<br>';
                 }
-
-                $stats->view_count = $data->items[0]->statistics->viewCount;
-                $stats->hidden_subscriber_count = $data->items[0]->statistics->hiddenSubscriberCount;
-                $stats->video_count = $data->items[0]->statistics->videoCount;
-                $stats->statistics_date = Carbon::now()->format('Y-m-d');
-                $stats->save();
-            }else{
-                echo 'Channel id of <b>'.$obj->channel_name.'</b> is not valid<br>';
+                
             }
         }
     }
