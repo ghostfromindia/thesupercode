@@ -9,10 +9,36 @@
 @section('content')
 
 
+    <!--hero section start-->
+    <section class="ptb-120 gradient-bg-alt">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-8">
+                    <div class="hero-content-wrap text-white text-center position-relative">
+                        <h1 class="text-white">Profile of {{$channel->channel_name}}</h1>
+                        <p class="lead">{{$channel->channel_name.' currently having '.subscriberFormat($channel->subscriber_count).' subscribers on '.date('Y-m-d')}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="container" align="cnter" >
-        <h1 class="pad-height">{{$channel->channel_name}} <img src="https://img.icons8.com/emoji/48/000000/fire.png"/></h1>
-    </div>
+    <!--hero section start-->
+    <section class="hero-equal-height ptb-120 gradient-overlay bg-image">
+        <div class="background-image-wraper custom-overlay" style="background: url('{{asset('client/desktop')}}/assets/img/hero-offer-bg.svg')no-repeat center center / cover; opacity: 1;"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-9 col-lg-8">
+                    <div class="hero-content-left text-white text-center">
+                        <h1 class="text-white big-text mb-0"><span>Profile of {{$channel->channel_name}}</span> {{subscriberFormat($channel->subscriber_count)}}</h1>
+                        <a href="https://youtube.com/channel/{{$channel->channel_id}}" class="btn btn-danger btn-lg mb-3">View YouTube Channel</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--hero section end-->
 
 
     <div class="container">
