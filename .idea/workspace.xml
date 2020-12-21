@@ -74,9 +74,10 @@
       <file leaf-file-name="channel.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/client/modules/youtube/channel.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+            <state relative-caret-position="143">
+              <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
               <folding>
+                <element signature="e#450#483#0#HTML" expanded="true" />
                 <element signature="e#1172#1271#0#HTML" expanded="true" />
               </folding>
             </state>
@@ -577,7 +578,7 @@
       <workItem from="1608179852674" duration="3233000" />
       <workItem from="1608266987635" duration="2695000" />
       <workItem from="1608410993953" duration="13000" />
-      <workItem from="1608550234963" duration="6783000" />
+      <workItem from="1608550234963" duration="7391000" />
     </task>
     <task id="LOCAL-00001" summary="login update">
       <created>1607790758348</created>
@@ -796,11 +797,25 @@
       <option name="project" value="LOCAL" />
       <updated>1608557834989</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Channel page update">
+      <created>1608557894498</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1608557894498</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Channel page update">
+      <created>1608558439393</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1608558439393</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81727000" />
+    <option name="totallyTimeSpent" value="82335000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1241,9 +1256,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/client/modules/youtube/channel.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+        <state relative-caret-position="143">
+          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
           <folding>
+            <element signature="e#450#483#0#HTML" expanded="true" />
             <element signature="e#1172#1271#0#HTML" expanded="true" />
           </folding>
         </state>

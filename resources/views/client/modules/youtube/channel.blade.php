@@ -33,7 +33,7 @@
         <div class="col-md-12">
             <div class="row">
                 @foreach($stats as $obj)
-                    <div class="col-12">
+                    <div class="col-md-3 col-12">
                         <div class="features-box border p-4 rounded">
                             <div class="features-box-icon mb-3">
                                 @if($obj->yesterday())
