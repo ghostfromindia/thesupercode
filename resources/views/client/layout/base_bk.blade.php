@@ -15,8 +15,7 @@
         <meta property="og:url" content="@yield('url')" />
         <meta property="og:site_name" content="The Super Code" />
 
-        <link rel="stylesheet" href="{{asset('client/desktop')}}/assets/css/main.css">
-
+        <link rel="stylesheet" href="{{asset('client/bootstrap-4.5.3/css/bootstrap.css')}}">
         <link rel="stylesheet" href="{{asset('client/style.css')}}">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Condiment&family=Cookie&family=Dancing+Script:wght@700&family=Merienda+One&family=Pacifico&family=Sofia&family=Yellowtail&display=swap" rel="stylesheet">
@@ -71,18 +70,6 @@
                 padding: 0;
             }
 
-            .gradient-bg-alt {
-                background: linear-gradient(75deg, #ffc107, #dc3545) !important;
-            }
-
-            .gradient-bg {
-                background: linear-gradient(75deg, #ffc107, #dc3545) !important;
-            }
-
-            .ptb-120 {
-                padding: 80px 0 0;
-            }
-
 
 
         </style>
@@ -129,60 +116,37 @@ border-top-right-radius: 5px;">
         @endif
     @endauth
 
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">the<span class="primary-color">super</span>code.com</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{url('/')}}">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{url('youtube-analysis')}}"><img src="https://img.icons8.com/plasticine/50/000000/youtube.png" width="20px"/> Youtube Analysis</a>
+                        </li>
 
-    @include('client.desktop.common.header')
-
-
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
         @section('content')
             @show
 
 
-    @include('client.desktop.common.footer')
 
+        <footer>
 
-
-    <div class="footer-bottom py-3 gray-light-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-7">
-                    <div class="copyright-wrap small-text">
-                        <p class="mb-0">&copy; TheSuperCode Design Agency, All rights reserved</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-5">
-                    <div class="terms-policy-wrap text-lg-right text-md-right text-left">
-                        <ul class="list-inline">
-                            <li class="list-inline-item"><a class="small-text" href="{{url('terms-condition')}}">Terms & Condition</a></li>
-                            <li class="list-inline-item"><a class="small-text" href="{{url('privacy-policy')}}">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-        <div class="scroll-top scroll-to-target primary-bg text-white" data-target="html">
-            <span class="fas fa-hand-point-up"></span>
-        </div>
-
-        <!--build:js-->
-        <script src="{{asset('client/desktop')}}/assets/js/vendors/jquery-3.5.1.min.js"></script>
-        <script src="{{asset('client/desktop')}}/assets/js/vendors/popper.min.js"></script>
-        <script src="{{asset('client/desktop')}}/assets/js/vendors/bootstrap.min.js"></script>
-        <script src="{{asset('client/desktop')}}/assets/js/vendors/bootstrap-slider.min.js"></script>
-        <script src="{{asset('client/desktop')}}/assets/js/vendors/jquery.easing.min.js"></script>
-        <script src="{{asset('client/desktop')}}/assets/js/vendors/owl.carousel.min.js"></script>
-        <script src="{{asset('client/desktop')}}/assets/js/vendors/countdown.min.js"></script>
-        <script src="{{asset('client/desktop')}}/assets/js/vendors/jquery.waypoints.min.js"></script>
-        <script src="{{asset('client/desktop')}}/assets/js/vendors/jquery.rcounterup.js"></script>
-        <script src="{{asset('client/desktop')}}/assets/js/vendors/magnific-popup.min.js"></script>
-        <script src="{{asset('client/desktop')}}/assets/js/vendors/validator.min.js"></script>
-        <script src="{{asset('client/desktop')}}/assets/js/vendors/hs.megamenu.js"></script>
-        <script src="{{asset('client/desktop')}}/assets/js/app.js"></script>
-        <!--endbuild-->
+        </footer>
+        <script src="{{asset('client/jquery/jquery-3.5.1.min.js')}}"></script>
+        <script src="{{asset('client/bootstrap-4.5.3/js/bootstrap.js')}}"></script>
 
         <script>
             var fontArray = ['font-1','font-2','font-3','font-4','font-5','font-6','font-7','font-8'];

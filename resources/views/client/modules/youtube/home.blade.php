@@ -9,39 +9,55 @@
 
 
 
-    <div class="container" align="center">
-        <h1 class="pad-height">Top Subscribed youtube channels in Kerala  <img src="https://img.icons8.com/emoji/48/000000/fire.png"/></h1>
-    </div>
-
+    <!--hero section start-->
+    <section class="ptb-120 gradient-bg-alt">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-8">
+                    <div class="hero-content-wrap text-white text-center position-relative">
+                        <h1 class="text-white">Top Subscribed youtube channels in Kerala</h1>
+                        <p class="lead">Most subscribed channels on {{date('Y m d')}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <div class="container">
         <div class="col-md-12" align="center">
-            <hr>
 
-            <table class="table table-striped table-bordered">
-                <thead class="thead-dark">
-                    <tr>
-                        <th>Rank #</th>
-                        <th>Channel Name</th>
-                        <th>Subscribers</th>
-                    </tr>
-                </thead>
-                <tbody>
+            <div class="row">
+
                 @foreach($channels as $obj)
+                <div class="col-md-4">
 
-                    <tr>
-                        <td>{{$loop->index+1}}</td>
-                        <td><span class="badge">
-                                <a href="{{url('youtube-analysis/category/'.$obj->ycslug)}}">{{$obj->category_name}}</a></span>
-                            <a href="https://youtube.com/channel/{{$obj->channel_id}}" target="_blank"><img src="https://img.icons8.com/color/48/000000/youtube.png" width="20px"/></a>
-                            <a href="{{url('youtube-analysis/channel/'.$obj->chslug)}}">{{$obj->channel_name}}</a>
-                        </td>
-                        <td>{{subscriberFormat($obj->subscriber_count)}}</td>
-                    </tr>
+                    <div class="border single-review-wrap bg-white p-4 m-3">
+                        <div class="review-body">
+                            <h5>{{subscriberFormat($obj->subscriber_count)}}</h5>
+                            <p>Popular creator in  <a href="{{url('youtube-analysis/category/'.$obj->ycslug)}}">{{$obj->category_name}}</a> category.</p>
+                        </div>
+                        <div class="review-author d-flex align-items-center">
+                            <div class="author-avatar">
+                                <img src="assets/img/client-2.jpg" width="64" alt="author" class="rounded-circle shadow-sm img-fluid mr-3">
+                                <span>“</span>
+                            </div>
+                            <div class="review-info">
+                                <a href="{{url('youtube-analysis/channel/'.$obj->chslug)}}">
+                                <h6 class="mb-0">{{$obj->channel_name}}</h6>
+                                <span>#{{$loop->index+1}}</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
+                </div>
                 @endforeach
-                </tbody>
-            </table>
+            </div>
+
+
+
+
+
         </div>
     </div>
 

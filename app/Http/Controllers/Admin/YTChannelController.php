@@ -89,7 +89,7 @@ class YTChannelController extends BaseController
                 }else{
                     echo 'Channel id of <b>'.$obj->channel_name.'</b> is not valid<br>';
                 }
-                
+
             }
         }
     }
