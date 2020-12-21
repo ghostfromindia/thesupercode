@@ -9,19 +9,6 @@
 @section('content')
 
 
-    <!--hero section start-->
-    <section class="ptb-120 gradient-bg-alt">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 col-lg-8">
-                    <div class="hero-content-wrap text-white text-center position-relative">
-                        <h1 class="text-white">Profile of {{$channel->channel_name}}</h1>
-                        <p class="lead">{{$channel->channel_name.' currently having '.subscriberFormat($channel->subscriber_count).' subscribers on '.date('Y-m-d')}}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!--hero section start-->
     <section class="hero-equal-height ptb-120 gradient-overlay bg-image">
@@ -42,13 +29,7 @@
 
 
     <div class="container">
-        <div class="col-md-12" align="center">
-            <hr>
-            <div class="sub-count">
-                {{subscriberFormat($channel->subscriber_count)}}
-            </div>
-            <hr>
-        </div>
+
         <div class="col-md-12">
             <div class="row">
                 @foreach($stats as $obj)
