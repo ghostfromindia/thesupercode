@@ -74,7 +74,7 @@ class YTController extends Controller
 
     public function most_viewed(){
 
-        $channels_1 = $this->ranklist(Carbon::now()->format('Y-m-d'));
+         $channels_1 = $this->ranklist(Carbon::now()->format('Y-m-d'));
         $channels_2 = $this->ranklist(Carbon::now()->subDay()->format('Y-m-d'));
         $channels_3 = $this->ranklist(Carbon::now()->subDays(2)->format('Y-m-d'));
         $channels_4 = $this->ranklist(Carbon::now()->subDays(3)->format('Y-m-d'));
@@ -102,7 +102,7 @@ class YTController extends Controller
                                     INNER JOIN youtube_channels as yc ON ys.channel_id = yc.id
                                     LEFT JOIN files as f ON yc.channel_profile_image = f.id
                                     LEFT JOIN youtube_categories as cat ON yc.primary_category = cat.id
-                                    WHERE ys.statistics_date = '".Carbon::parse($date)->subDay()."'
+                                    WHERE ys.statistics_date = '".Carbon::parse($date)."'
                                     ORDER BY dif DESC
                                     ");
     }
