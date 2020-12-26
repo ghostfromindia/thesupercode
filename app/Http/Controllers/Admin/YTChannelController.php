@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Youtube\Channels;
 use App\Models\Youtube\Statistics;
 use App\Traits\ResourceTrait;
+use App\Traits\UploaderTrait;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -17,6 +18,7 @@ use Yajra\DataTables\DataTables;
 class YTChannelController extends BaseController
 {
     use ResourceTrait;
+    use UploaderTrait;
 
     public function __construct()
     {
@@ -119,19 +121,27 @@ class YTChannelController extends BaseController
         $i=0;
         foreach ($response->items as $obj){
 
-            echo $obj->snippet->title.'<br>';
-
             $data['channel_name'] = $obj->snippet->title;
             $data['slug'] = $this->slugify($obj->snippet->title);
             $data['channel_id'] = $obj->snippet->resourceId->channelId;
             $data['channel_user_name'] = $obj->snippet->title;
             $data['created_by'] = 2215;
 
-            $channel = Channels::where('channel_id',$obj->snippet->resourceId->channelId)->first();
+            $channel = Channels::where('channel_id',$obj->snippet->resourceId->channelId)->whereNull('channel_profile_image')->first();
             if(!$channel){
                 $channel = new Channels();
+
+
+                $resource_id = $this->uploadit_link($obj->snippet->thumbnails->medium->url,'files/youtube/channels',self::slugify($obj->snippet->title),'youtube','jpg');
+
+                if($resource_id){
+                    $data['channel_profile_image'] = $resource_id;
+                }
+
                 $channel->fill($data);
                 $channel->save();
+
+
             }
 
         }

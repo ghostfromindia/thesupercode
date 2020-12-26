@@ -30,6 +30,8 @@ Route::middleware(['webroutes'])->group(function () {
     Route::get('ytchannel/sync-statistics', 'Admin\YTChannelController@sync_statistics')->name('admin.ytchannel.sync_statistics');
     Route::get('ytchannel/sync-channels', 'Admin\YTChannelController@sync_channels');
 
+    Route::get('image-upload-test','Client\PageController@image_upload');
+
 
 
     Route::get('login', 'Login\LoginController@login');

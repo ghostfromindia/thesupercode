@@ -37,4 +37,5 @@ class Controller extends BaseController
 
         return $text;
     }
+
 }
