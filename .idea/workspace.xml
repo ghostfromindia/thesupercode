@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fb4b42f-7fa8-405b-ae8b-1bfc75d7ad83" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/YTChannelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/YTChannelController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +19,8 @@
       <file leaf-file-name="YTChannelController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/YTChannelController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="134" column="86" selection-start-line="134" selection-start-column="86" selection-end-line="134" selection-end-column="86" />
+            <state relative-caret-position="289">
+              <caret line="144" column="27" selection-start-line="144" selection-start-column="27" selection-end-line="144" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -523,7 +522,7 @@
       <workItem from="1608550234963" duration="10563000" />
       <workItem from="1608614857918" duration="599000" />
       <workItem from="1608699574056" duration="599000" />
-      <workItem from="1608967346803" duration="7121000" />
+      <workItem from="1608967346803" duration="7174000" />
     </task>
     <task id="LOCAL-00001" summary="login update">
       <created>1607790758348</created>
@@ -819,11 +818,18 @@
       <option name="project" value="LOCAL" />
       <updated>1608974943885</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Youtube channel images update - bugs">
+      <created>1608975151949</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1608975151949</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93826000" />
+    <option name="totallyTimeSpent" value="93879000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1253,8 +1259,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/YTChannelController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="134" column="86" selection-start-line="134" selection-start-column="86" selection-end-line="134" selection-end-column="86" />
+        <state relative-caret-position="289">
+          <caret line="144" column="27" selection-start-line="144" selection-start-column="27" selection-end-line="144" selection-end-column="27" />
         </state>
       </provider>
     </entry>
