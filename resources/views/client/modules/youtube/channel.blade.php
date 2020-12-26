@@ -38,15 +38,25 @@
                             <div class="features-box-icon mb-3">
                                 @if($obj->yesterday())
                                     New views : {{subscriberFormat($obj->view_count - $obj->yesterday()->view_count)}}
-                                @else
-                                    Total view : {{subscriberFormat($obj->view_count)}}
                                 @endif
                             </div>
                             <div class="features-box-content">
-                                <h5> {{\Carbon\Carbon::parse($obj->statistics_date)->format('d F Y')}}</h5>
+                                <h5> {{\Carbon\Carbon::parse($obj->statistics_date)->subDay()->format('d F Y')}}</h5>
                                 {{--<p>Our intuitive control panel gives you admin access to all of your DreamHost products--}}
                                     {{--easily.</p>--}}
                             </div>
+                            <p>
+                                @if(!empty($obj->yesterday()))
+                                    @php $v_count = $obj->video_count-$obj->yesterday()->video_count;
+                                    if($v_count > 0){
+                                        if ($v_count == 1) { echo '1 new video<br>'; }else{echo $v_count.' new videos<br>';}
+                                    }
+                                    @endphp
+                                @endif
+
+                                Total view : {{subscriberFormat($obj->view_count)}} <br>
+                                Total subs : {{subscriberFormat($obj->subscriber_count)}}
+                            </p>
                         </div>
 
                     </div>

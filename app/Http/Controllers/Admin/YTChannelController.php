@@ -119,6 +119,8 @@ class YTChannelController extends BaseController
         $i=0;
         foreach ($response->items as $obj){
 
+            echo $obj->snippet->title.'<br>';
+
             $data['channel_name'] = $obj->snippet->title;
             $data['slug'] = $this->slugify($obj->snippet->title);
             $data['channel_id'] = $obj->snippet->resourceId->channelId;
