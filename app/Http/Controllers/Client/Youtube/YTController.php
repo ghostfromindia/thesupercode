@@ -74,12 +74,12 @@ class YTController extends Controller
 
     public function most_viewed(){
 
-        $channels_1 = $this->ranklist(Carbon::now()->subDay()->format('Y-m-d'));
-        $channels_2 = $this->ranklist(Carbon::now()->subDays(2)->format('Y-m-d'));
-        $channels_3 = $this->ranklist(Carbon::now()->subDays(3)->format('Y-m-d'));
-        $channels_4 = $this->ranklist(Carbon::now()->subDays(4)->format('Y-m-d'));
-        $channels_5 = $this->ranklist(Carbon::now()->subDays(5)->format('Y-m-d'));
-        $channels_6 = $this->ranklist(Carbon::now()->subDays(6)->format('Y-m-d'));
+        $channels_1 = $this->ranklist(Carbon::now()->format('Y-m-d'));
+        $channels_2 = $this->ranklist(Carbon::now()->subDay()->format('Y-m-d'));
+        $channels_3 = $this->ranklist(Carbon::now()->subDays(2)->format('Y-m-d'));
+        $channels_4 = $this->ranklist(Carbon::now()->subDays(3)->format('Y-m-d'));
+        $channels_5 = $this->ranklist(Carbon::now()->subDays(4)->format('Y-m-d'));
+        $channels_6 = $this->ranklist(Carbon::now()->subDays(5)->format('Y-m-d'));
 
 
 

@@ -104,12 +104,12 @@
                 @foreach($channels_1 as $obj)
                 <tr>
                     <th class="headcol">{{$loop->index+1}}</th>
-                    <td class="long"><img data-toggle="tooltip" title="{{$channels_1[$loop->index]->channel_name}} [{{$channels_1[$loop->index]->dif}}]" src="{{asset($channels_1[$loop->index]->url)}}" alt="{{$channels_1[$loop->index]->channel_name}}" width="40px"></td>
-                    <td class="long"><img data-toggle="tooltip" title="{{$channels_2[$loop->index]->channel_name}} [{{$channels_2[$loop->index]->dif}}]" src="{{asset($channels_2[$loop->index]->url)}}" alt="{{$channels_2[$loop->index]->channel_name}}" width="40px"></td>
-                    <td class="long"><img data-toggle="tooltip" title="{{$channels_3[$loop->index]->channel_name}} [{{$channels_3[$loop->index]->dif}}]" src="{{asset($channels_3[$loop->index]->url)}}" alt="{{$channels_3[$loop->index]->channel_name}}" width="40px"></td>
-                    <td class="long"><img data-toggle="tooltip" title="{{$channels_4[$loop->index]->channel_name}} [{{$channels_4[$loop->index]->dif}}]" src="{{asset($channels_4[$loop->index]->url)}}" alt="{{$channels_4[$loop->index]->channel_name}}" width="40px"></td>
-                    <td class="long"><img data-toggle="tooltip" title="{{$channels_5[$loop->index]->channel_name}} [{{$channels_5[$loop->index]->dif}}]" src="{{asset($channels_5[$loop->index]->url)}}" alt="{{$channels_5[$loop->index]->channel_name}}" width="40px"></td>
-                    <td class="long"><img data-toggle="tooltip" title="{{$channels_6[$loop->index]->channel_name}} [{{$channels_6[$loop->index]->dif}}]" src="{{asset($channels_6[$loop->index]->url)}}" alt="{{$channels_6[$loop->index]->channel_name}}" width="40px"></td>
+                    <td class="long"><img data-toggle="tooltip" title="{{$channels_1[$loop->index]->channel_name}} [{{subscriberFormat($channels_1[$loop->index]->dif)}}]" src="{{asset($channels_1[$loop->index]->url)}}" alt="{{$channels_1[$loop->index]->channel_name}}" width="40px"></td>
+                    <td class="long"><img data-toggle="tooltip" title="{{$channels_2[$loop->index]->channel_name}} [{{subscriberFormat($channels_2[$loop->index]->dif)}}]" src="{{asset($channels_2[$loop->index]->url)}}" alt="{{$channels_2[$loop->index]->channel_name}}" width="40px"></td>
+                    <td class="long"><img data-toggle="tooltip" title="{{$channels_3[$loop->index]->channel_name}} [{{subscriberFormat($channels_3[$loop->index]->dif)}}]" src="{{asset($channels_3[$loop->index]->url)}}" alt="{{$channels_3[$loop->index]->channel_name}}" width="40px"></td>
+                    <td class="long"><img data-toggle="tooltip" title="{{$channels_4[$loop->index]->channel_name}} [{{subscriberFormat($channels_4[$loop->index]->dif)}}]" src="{{asset($channels_4[$loop->index]->url)}}" alt="{{$channels_4[$loop->index]->channel_name}}" width="40px"></td>
+                    <td class="long"><img data-toggle="tooltip" title="{{$channels_5[$loop->index]->channel_name}} [{{subscriberFormat($channels_5[$loop->index]->dif)}}]" src="{{asset($channels_5[$loop->index]->url)}}" alt="{{$channels_5[$loop->index]->channel_name}}" width="40px"></td>
+                    <td class="long"><img data-toggle="tooltip" title="{{$channels_6[$loop->index]->channel_name}} [{{subscriberFormat($channels_6[$loop->index]->dif)}}]" src="{{asset($channels_6[$loop->index]->url)}}" alt="{{$channels_6[$loop->index]->channel_name}}" width="40px"></td>
                 </tr>
                 @endforeach
 
