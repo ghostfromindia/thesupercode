@@ -65,10 +65,10 @@ trait UploaderTrait {
             $f->fill($data);
             $f->save();
 
-            echo $f->id;
-            return;
+
+            return $f->id;
         }else{
-            return false;
+            return NULL;
         }
 
     }
