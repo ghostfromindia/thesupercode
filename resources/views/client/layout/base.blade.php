@@ -21,6 +21,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Condiment&family=Cookie&family=Dancing+Script:wght@700&family=Merienda+One&family=Pacifico&family=Sofia&family=Yellowtail&display=swap" rel="stylesheet">
 
+
         <style>
             .font-1{font-family: 'Amatic SC', cursive;}
             .font-2{font-family: 'Condiment', cursive;}
@@ -86,6 +87,8 @@
 
 
         </style>
+
+        @section('head') @show
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-6ES6WTG3MD"></script>
@@ -183,8 +186,7 @@ border-top-right-radius: 5px;">
         <script src="{{asset('client/desktop')}}/assets/js/vendors/hs.megamenu.js"></script>
         <script src="{{asset('client/desktop')}}/assets/js/app.js"></script>
         <!--endbuild-->
-
-        <script>
+      <script>
             var fontArray = ['font-1','font-2','font-3','font-4','font-5','font-6','font-7','font-8'];
             var colorArray = ['color-1','color-2','color-3','color-4','color-5','color-6','color-7','color-8','color-9','color-10'];
             var dom = $('#intro-showoff');
@@ -194,5 +196,8 @@ border-top-right-radius: 5px;">
                 dom.removeAttr('class').addClass(font).addClass(color);
             },500)
         </script>
+
+    @section('bottom')
+@show
     </body>
 </html>

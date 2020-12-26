@@ -41,4 +41,8 @@ class Channels extends Model
     public function category(){
         return $this->belongsTo('App\Models\Youtube\Categories','primary_category');
     }
+
+    public function image(){
+        return $this->belongsTo('App\Models\Files','channel_profile_image');
+    }
 }

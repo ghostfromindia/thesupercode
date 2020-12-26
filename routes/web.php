@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('youtube-analysis','Client\Youtube\YTController@home');
 Route::get('youtube-analysis/category/{slug}','Client\Youtube\YTController@category');
 Route::get('youtube-analysis/channel/{slug}','Client\Youtube\YTController@channel');
+Route::get('youtube-analysis/most-viewed-channels','Client\Youtube\YTController@most_viewed');
 Route::get('slug-generator','Client\Youtube\YTController@make_category_slug');
 
 

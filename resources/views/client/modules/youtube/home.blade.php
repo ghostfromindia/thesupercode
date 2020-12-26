@@ -27,6 +27,9 @@
         <div class="col-md-12" align="center">
 
             <div class="row">
+                <div class="col-md-12" align="center">
+                    <a href="{{url('youtube-analysis/most-viewed-channels')}}">Click here</a> to see the most viewed youtube channels
+                </div>
 
                 @foreach($channels as $obj)
                 <div class="col-md-4">
@@ -38,8 +41,11 @@
                         </div>
                         <div class="review-author d-flex align-items-center">
                             <div class="author-avatar">
-                                <img src="assets/img/client-2.jpg" width="64" alt="author" class="rounded-circle shadow-sm img-fluid mr-3">
-                                <span>“</span>
+                                @if(!empty($obj->url))
+                                    <img src="{{asset($obj->url)}}" width="64" alt="{{$obj->channel_name}}" class="rounded-circle shadow-sm img-fluid mr-3">
+                                    @else
+                                    <img src="https://img.icons8.com/ultraviolet/80/000000/change-user-male.png" width="64" alt="{{$obj->channel_name}}" class="rounded-circle shadow-sm img-fluid mr-3">
+                                @endif
                             </div>
                             <div class="review-info">
                                 <a href="{{url('youtube-analysis/channel/'.$obj->chslug)}}">
