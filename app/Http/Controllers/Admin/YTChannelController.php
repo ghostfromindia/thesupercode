@@ -149,6 +149,8 @@ class YTChannelController extends BaseController
                         $channel->channel_profile_image = $resource_id;
                         $channel->save();
 
+                }else{
+                    echo $channel->channel_profile_image.'<br>';
                 }
             }
 
