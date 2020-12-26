@@ -134,9 +134,9 @@ class YTChannelController extends BaseController
 
                 $resource_id = $this->uploadit_link($obj->snippet->thumbnails->medium->url,'files/youtube/channels',self::slugify($obj->snippet->title),'youtube','jpg');
 
-                if($resource_id > 0){
+
                     $data['channel_profile_image'] = $resource_id;
-                }
+
 
                 $channel->fill($data);
                 $channel->save();
@@ -144,10 +144,10 @@ class YTChannelController extends BaseController
                 if(empty($channel->channel_profile_image)){
                     $resource_id = $this->uploadit_link($obj->snippet->thumbnails->medium->url,'files/youtube/channels',self::slugify($obj->snippet->title),'youtube','jpg');
 
-                    if($resource_id > 0){
+
                         $channel->channel_profile_image = $resource_id;
                         $channel->save();
-                    }
+
                 }
             }
 
