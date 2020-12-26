@@ -127,7 +127,7 @@ class YTChannelController extends BaseController
             $data['channel_user_name'] = $obj->snippet->title;
             $data['created_by'] = 2215;
 
-            $channel = Channels::where('channel_id',$obj->snippet->resourceId->channelId)->whereNull('channel_profile_image')->first();
+            $channel = Channels::where('channel_id',$obj->snippet->resourceId->channelId)->whereNotNull('channel_profile_image')->first();
             if(!$channel){
                 $channel = new Channels();
 
