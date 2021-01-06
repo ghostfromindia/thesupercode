@@ -17,10 +17,12 @@ class YTController extends Controller
             ->leftjoin('youtube_categories as yc','yc.id','=','ch.primary_category')
             ->leftjoin('youtube_statistics as ys','ys.channel_id','=','ch.id')
             ->leftjoin('files as f','f.id','=','ch.channel_profile_image')
-            ->select('ch.id', 'channel_name', 'ch.channel_id','category_name','ch.updated_at','subscriber_count','ch.slug as chslug','yc.slug as ycslug','f.url')->where('ys.statistics_date',Carbon::now()->format('Y-m-d'))
+            ->select('ch.id', 'channel_name', 'ch.channel_id','category_name','ch.updated_at','subscriber_count','ch.slug as chslug','yc.slug as ycslug','f.url','ys.view_count')->where('ys.statistics_date',Carbon::now()->format('Y-m-d'))
             ->orderby('subscriber_count','DESC')->get();
 
-        return view('client.modules.youtube.home',compact('channels'));
+        $categories = Categories::all();
+
+        return view('client.modules.youtube.home',compact('channels','categories'));
     }
 
     public function category($slug){
@@ -32,7 +34,7 @@ class YTController extends Controller
             ->leftjoin('youtube_categories as yc','yc.id','=','ch.primary_category')
             ->leftjoin('youtube_statistics as ys','ys.channel_id','=','ch.id')
             ->leftjoin('files as f','f.id','=','ch.channel_profile_image')
-            ->select('ch.id', 'channel_name', 'ch.channel_id','category_name','ch.updated_at','subscriber_count','ch.slug as chslug','yc.slug as ycslug','f.url')->where('ys.statistics_date',Carbon::now()->format('Y-m-d'))
+            ->select('ch.id', 'channel_name', 'ch.channel_id','category_name','ch.updated_at','subscriber_count','ch.slug as chslug','yc.slug as ycslug','f.url','ys.view_count')->where('ys.statistics_date',Carbon::now()->format('Y-m-d'))
             ->where('yc.slug',$slug)
             ->orderby('subscriber_count','DESC')->get();
 

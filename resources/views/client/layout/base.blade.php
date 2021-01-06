@@ -197,6 +197,23 @@ border-top-right-radius: 5px;">
             },500)
         </script>
 
+    @auth
+        @if(Auth::user()->is_admin == 1)
+
+            <script>
+                $('select[name=category]').on('change', function () {
+                    $.post('admin/ytcategory/change-category',{_token:'{{csrf_token()}}','channel_id':$(this).data('id'),'category_id':$(this).val()}).done(function (data) {
+                        alert('updated');
+                    })
+                })
+            </script>
+
+        @endauth
+    @endauth
+
+
+
+
     @section('bottom')
 @show
     </body>

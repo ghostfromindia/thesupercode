@@ -5,7 +5,9 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\BaseController;
 use App\Http\Controllers\Controller;
 use App\Models\Youtube\Categories;
+use App\Models\Youtube\Channels;
 use App\Traits\ResourceTrait;
+use Illuminate\Broadcasting\Channel;
 use Illuminate\Http\Request;
 
 class YTCategoryController extends BaseController
@@ -29,5 +31,12 @@ class YTCategoryController extends BaseController
     protected function getCollection()
     {
         return $this->model->select('id', 'category_name','updated_at');
+    }
+
+    public function change_category(Request $request){
+        $channel = Channels::find($request->channel_id);
+        $category = Categories::find(decrypt($request->category_id));
+        $channel->primary_category = $category->id;
+        $channel->save();
     }
 }

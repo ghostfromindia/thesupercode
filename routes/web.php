@@ -71,6 +71,9 @@ Route::middleware(['webroutes'])->group(function () {
             Route::post('ytcategory/update', 'YTCategoryController@update')->name('admin.ytcategory.update');
 
 
+            Route::post('ytcategory/change-category', 'YTCategoryController@change_category');
+
+
 
         });
     });

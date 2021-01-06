@@ -20,7 +20,7 @@
                             </div>
                             <div class="nk-block-head">
                                 <div class="nk-block-head-content">
-                                    <h5 class="nk-block-title">Sign-In</h5>
+                                    <h5 class="nk-block-title">Sign-In (Development mode : only access to admin)</h5>
                                     <div class="nk-block-des">
                                         <p>Access the super code panel using your email and passcode.</p>
                                     </div>

@@ -8,7 +8,21 @@
 @section('url',url()->current())
 
 @section('head')
-
+    <style>
+        table{
+            background: white;
+        }
+        th:first-child, td:first-child
+        {
+            position:sticky;
+            left:0px;
+            background-color:white;
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
     @endsection
 @section('content')
 
@@ -54,10 +68,11 @@
 
 <div class="table-wrapper">
 
-
+    <div class="row justify-content-center">
+        <div class="col-auto">
             <table class="table table-responsive" width="100%" style="margin-left: auto;margin-right: auto">
                 <thead>
-                    <th class="headcol"></th>
+                    <th class="headcol">RANK</th>
                     <th>{{Carbon\Carbon::now()->subDay()->format('d M')}}</th>
                     <th>{{Carbon\Carbon::now()->subDays(2)->format('d M')}}</th>
                     <th>{{Carbon\Carbon::now()->subDays(3)->format('d M')}}</th>
@@ -68,7 +83,7 @@
                 @foreach($channels_1 as $obj)
                     @if(!empty($channels_1[$loop->index]) && !empty($channels_2[$loop->index]) && !empty($channels_3[$loop->index]) && !empty($channels_4[$loop->index]) && !empty($channels_5[$loop->index]) && !empty($channels_6[$loop->index]))
                 <tr>
-                    <th class="headcol">{{$loop->index+1}}</th>
+                    <th class="headcol">#{{$loop->index+1}}</th>
                     <td class="long"><img data-toggle="tooltip" title="{{$channels_1[$loop->index]->channel_name}} [{{subscriberFormat($channels_1[$loop->index]->dif)}}]" src="{{asset($channels_1[$loop->index]->url)}}" alt="{{$channels_1[$loop->index]->channel_name}}" width="40px"></td>
                     <td class="long"><img data-toggle="tooltip" title="{{$channels_2[$loop->index]->channel_name}} [{{subscriberFormat($channels_2[$loop->index]->dif)}}]" src="{{asset($channels_2[$loop->index]->url)}}" alt="{{$channels_2[$loop->index]->channel_name}}" width="40px"></td>
                     <td class="long"><img data-toggle="tooltip" title="{{$channels_3[$loop->index]->channel_name}} [{{subscriberFormat($channels_3[$loop->index]->dif)}}]" src="{{asset($channels_3[$loop->index]->url)}}" alt="{{$channels_3[$loop->index]->channel_name}}" width="40px"></td>
@@ -80,6 +95,8 @@
                 @endforeach
 
             </table>
+        </div>
+    </div>
 </div>
         </div>
     </div>

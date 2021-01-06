@@ -22,7 +22,7 @@
                                 </div>
                                 <div class="nk-block-head">
                                     <div class="nk-block-head-content">
-                                        <h5 class="nk-block-title">Register</h5>
+                                        <h5 class="nk-block-title">Register (Development mode : only access to admin)</h5>
                                         <div class="nk-block-des">
                                             <p>Create New <b>The Super Code</b> Account</p>
                                         </div>

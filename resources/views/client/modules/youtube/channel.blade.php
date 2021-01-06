@@ -49,21 +49,33 @@
 
 
 
-    <!--hero section start-->
-    <section class="hero-equal-height ptb-120 gradient-overlay bg-image" style="height: 50%;min-height: 0">
-        <div class="background-image-wraper custom-overlay" style="background: url('{{asset('client/desktop')}}/assets/img/hero-offer-bg.svg')no-repeat center center / cover; opacity: 1;"></div>
+    <section class="ptb-100 overflow-hidden primary-bg no-padding">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-9 col-lg-8">
-                    <div class="hero-content-left text-white text-center">
-                        <h1 class="text-white big-text mb-0"><span>Profile of {{$channel->channel_name}}</span> {{subscriberFormat($channel->subscriber_count)}}</h1>
-                        <a href="https://youtube.com/channel/{{$channel->channel_id}}" class="btn btn-danger btn-lg mb-3" target="_blank">View YouTube Channel</a>
+            <div class="row align-items-center justify-content-lg-between justify-content-md-center justify-content-sm-center">
+                <div class="col-md-12 col-lg-6">
+                    <div class="hero-slider-content text-white py-5">
+                        <h1 class="text-white">Profile of {{$channel->channel_name}}</span> {{subscriberFormat($channel->subscriber_count)}}</h1>
+                        <p class="lead">{{subscriberFormat($channel->subscriber_count)}}</p>
+
+                        <div class="action-btns mt-4">
+                            <a href="https://youtube.com/channel/{{$channel->channel_id}}" class="btn btn-brand-03 btn-lg">View YouTube Channel</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-lg-6">
+                    <div class="img-wrap d-none d-md-block ">
+                        @if(!empty($channel->url))
+                            <img src="{{asset($channel->url)}}" alt="{{$channel->channel_name}}"  class="img-fluid"> @endif
+
                     </div>
                 </div>
             </div>
-
+            <!--end of row-->
         </div>
+        <!--end of container-->
     </section>
+    <!--hero section end-->
+
     <!--hero section end-->
 
 
@@ -71,7 +83,6 @@
         <div class="col-12">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{{url('/')}}">Home</a></li>
                 <li class="breadcrumb-item"><a href="{{url('youtube-analysis')}}">Youtube Analysis</a></li>
 
                 <li class="breadcrumb-item"><a href="{{url('youtube-analysis/category/'.$channel->ycslug)}}">{{$channel->category_name}}</a></li>
