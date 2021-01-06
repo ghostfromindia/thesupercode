@@ -23548,18 +23548,7 @@ a.close.disabled {
 }
 
 /* line 57, src/assets/scss/components/_components.header.scss */
-.main-header-menu-wrap.affix {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 9999;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-name: slideInDown;
-          animation-name: slideInDown;
-}
+
 
 /* line 66, src/assets/scss/components/_components.header.scss */
 .header-nav {

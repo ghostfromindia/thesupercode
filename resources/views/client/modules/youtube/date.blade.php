@@ -8,82 +8,46 @@
 @section('url',url()->current())
 
 @section('head')
-<style>
-    table {
-        border-collapse: separate;
-        border-spacing: 0;
-        border-top: 1px solid grey;
-    }
 
-    td, th {
-        margin: 0;
-        border: 1px solid grey;
-
-        border-top-width: 0px;
-    }
-
-
-
-    .headcol {
-        position: absolute;
-        width: 5em;
-        left: 0;
-        top: auto;
-        border-top-width: 1px;
-        /*only relevant for first row*/
-        margin-top: -1px;
-        /*compensate for top border*/
-        padding: 20px !important;
-    }
-
-    .headcol:before {
-        content: '#';
-    }
-
-    .table-wrapper{
-        width: 80%;
-        overflow-x: scroll;
-        margin-left: 5em;
-        overflow-y: visible;
-        padding: 0;
-    }
-</style>
     @endsection
 @section('content')
 
-    <!--hero section start-->
-    <section class="hero-equal-height ptb-120 gradient-overlay bg-image" style="height: 50%;min-height: 0">
-        <div class="background-image-wraper custom-overlay" style="background: url('{{asset('client/desktop')}}/assets/img/hero-offer-bg.svg')no-repeat center center / cover; opacity: 1;"></div>
+
+
+    <section class="ptb-100 overflow-hidden primary-bg no-padding">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-9 col-lg-8">
-                    <div class="hero-content-left text-white text-center">
-                        <h1 class="text-white big-text mb-0" style="    font-size: 38px;
-    line-height: 40px;">
-                            Most viewed youtube channels in Kerala
-                        </h1>
+            <div class="row align-items-center justify-content-lg-between justify-content-md-center justify-content-sm-center">
+                <div class="col-md-12 col-lg-6">
+                    <div class="hero-slider-content text-white py-5">
+                        <h1 class="text-white">Most viewed youtube channels in Kerala</h1>
+                        <p class="lead">Analysis on views of youtube channels in last week</p>
+
+                        <div class="action-btns mt-4">
+                            <a href="{{url('youtube-analysis')}}" class="btn btn-brand-03 btn-lg">Most subscribed youtube channels</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-lg-6">
+                    <div class="img-wrap d-none d-md-block ">
+                        @foreach($channels_1 as $obj)
+                            <img src="@if(!empty($obj->url)) {{asset($obj->url)}} @endif" alt="{{$obj->channel_name}}" style="width: 50px;height: 50px" class="img-fluid">
+                            @if($loop->index == 39) @break @endif
+                        @endforeach
                     </div>
                 </div>
             </div>
-
+            <!--end of row-->
         </div>
+        <!--end of container-->
     </section>
+    <!--hero section end-->
+
     <!--hero section end-->
 
 
 
 
     <div class="container">
-        <div class="col-12">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="{{url('/')}}">Home</a></li>
-                    <li class="breadcrumb-item"><a href="{{url('youtube-analysis')}}">Youtube Analysis</a></li>
-
-
-                </ol>
-            </nav>
-        </div>
 
 
         <div class="col-md-12" align="center" >
@@ -91,7 +55,7 @@
 <div class="table-wrapper">
 
 
-            <table class="table" width="100%">
+            <table class="table table-responsive" width="100%" style="margin-left: auto;margin-right: auto">
                 <thead>
                     <th class="headcol"></th>
                     <th>{{Carbon\Carbon::now()->subDay()->format('d M')}}</th>

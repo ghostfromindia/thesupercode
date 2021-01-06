@@ -73,11 +73,11 @@
             }
 
             .gradient-bg-alt {
-                background: linear-gradient(75deg, #ffc107, #dc3545) !important;
+                background: #2c3e50 !important;
             }
 
             .gradient-bg {
-                background: linear-gradient(75deg, #ffc107, #dc3545) !important;
+                background: #2c3e50 !important;
             }
 
             .ptb-120 {
