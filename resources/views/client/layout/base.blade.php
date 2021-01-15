@@ -111,6 +111,8 @@
 
         @section('head') @show
 
+        <script data-ad-client="ca-pub-5595711823084513" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-6ES6WTG3MD"></script>
         <script>
