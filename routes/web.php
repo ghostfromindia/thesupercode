@@ -19,6 +19,11 @@ Route::get('youtube-analysis/channel/{slug}','Client\Youtube\YTController@channe
 Route::get('youtube-analysis/most-viewed-channels','Client\Youtube\YTController@most_viewed');
 Route::get('slug-generator','Client\Youtube\YTController@make_category_slug');
 
+Route::get('terms-condition','Client\PageController@terms_condition');
+Route::get('privacy-policy','Client\PageController@privacy_policy');
+
+
+
 
 Route::middleware(['webroutes'])->group(function () {
 
@@ -42,6 +47,13 @@ Route::middleware(['webroutes'])->group(function () {
     Route::post('register', 'Login\LoginController@attempt_register');
 
     Route::get('logout', 'Login\LoginController@logout');
+
+    Route::group(['prefix' => 'quiz', 'namespace' => 'Quiz'], function(){
+
+            Route::get('/', 'QuizController@home');
+            Route::get('/category', 'QuizController@category');
+            Route::get('{slug}', 'QuizController@quiz');
+    });
 
     Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function(){
         Route::group(['middleware' => ['isAdmin']], function(){

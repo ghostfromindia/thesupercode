@@ -30,11 +30,11 @@
 
 
                         <!--button start-->
-                        <li class="nav-item header-nav-last-item d-flex align-items-center">
-                            <a class="btn btn-brand-03 animated-btn" href="{{url('login')}}" target="_blank">
-                                <span class="fa fa-user pr-2"></span> Client Area
-                            </a>
-                        </li>
+                        {{--<li class="nav-item header-nav-last-item d-flex align-items-center">--}}
+                            {{--<a class="btn btn-brand-03 animated-btn" href="{{url('login')}}" target="_blank">--}}
+                                {{--<span class="fa fa-user pr-2"></span> Client Area--}}
+                            {{--</a>--}}
+                        {{--</li>--}}
                         <!--button end-->
                     </ul>
                 </div>
