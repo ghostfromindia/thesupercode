@@ -1,5 +1,12 @@
-<html>
+@php
+    $string = preg_replace("/[^ \w]+/", "", url()->current());
+    if(file_exists(public_path().'/web/'.$string.'.html')){
+        echo  file_get_contents(public_path().'/web/'.$string.'.html');
+    }
 
+    ob_start();
+@endphp
+<html>
     <head>
         <meta name=”robots” content="index, follow">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -41,6 +48,7 @@
         <link rel="stylesheet" href="{{asset('client/style.css')}}">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Condiment&family=Cookie&family=Dancing+Script:wght@700&family=Merienda+One&family=Pacifico&family=Sofia&family=Yellowtail&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
 
 
         <style>
@@ -207,6 +215,7 @@ border-top-right-radius: 5px;">
         <script src="{{asset('client/desktop')}}/assets/js/vendors/magnific-popup.min.js"></script>
         <script src="{{asset('client/desktop')}}/assets/js/vendors/validator.min.js"></script>
         <script src="{{asset('client/desktop')}}/assets/js/vendors/hs.megamenu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
         <script src="{{asset('client/desktop')}}/assets/js/app.js"></script>
         <!--endbuild-->
       <script>
@@ -241,3 +250,16 @@ border-top-right-radius: 5px;">
 @show
     </body>
 </html>
+@php
+    if (!file_exists(public_path().'/web')) {
+    mkdir(public_path().'/web', 0777, true);
+    }
+
+    if(strpos(url()->current(),'?') !== false){
+
+    }else{
+    $string = preg_replace("/[^ \w]+/", "", url()->current());
+    file_put_contents(public_path().'/web/'.$string.'.html', ob_get_contents());
+    }
+
+@endphp
