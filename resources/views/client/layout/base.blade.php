@@ -3,7 +3,6 @@
     if(file_exists(public_path().'/web/'.$string.'.html')){
         echo  file_get_contents(public_path().'/web/'.$string.'.html');
     }
-
     ob_start();
 @endphp
 <html>

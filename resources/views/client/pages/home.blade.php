@@ -11,7 +11,7 @@
                         <p class="lead">Are you planning to have a website? you are in right place. we create lighting fast website for you business</p>
 
                         <div class="action-btns mt-4">
-                            <a href="#" class="btn btn-brand-03 btn-lg">Get a call back now </a>
+                            <a href="javascript:void(0)" class="btn btn-brand-03 btn-lg call-back">Get a call back now </a>
                         </div>
                     </div>
                 </div>
@@ -248,4 +248,49 @@
     </section>
 
 
+@endsection
+
+@section('bottom')
+    <script>
+        $('.call-back').click(function(){
+            $.confirm({
+                title: 'Get in touch asap!',
+                content: '' +
+                '<form action="" class="formName">' +
+                '<div class="form-group">' +
+                '<label>Enter your name</label>' +
+                '<input type="text" placeholder="Your name" class="name form-control" required />' +
+                '<label>Enter your email address</label>' +
+                '<input type="text" placeholder="Your email address" class="name form-control" required />' +
+                '</div>' +
+                '</form>',
+                buttons: {
+                    formSubmit: {
+                        text: 'Submit',
+                        btnClass: 'btn-blue',
+                        action: function () {
+                            var name = this.$content.find('.name').val();
+                            if(!name){
+                                $.alert('provide a valid name');
+                                return false;
+                            }
+                            $.alert('Your name is ' + name);
+                        }
+                    },
+                    cancel: function () {
+                        //close
+                    },
+                },
+                onContentReady: function () {
+                    // bind to events
+                    var jc = this;
+                    this.$content.find('form').on('submit', function (e) {
+                        // if the user submits the form by pressing enter in the field.
+                        e.preventDefault();
+                        jc.$$formSubmit.trigger('click'); // reference the button and click it
+                    });
+                }
+            });
+        })
+    </script>
 @endsection

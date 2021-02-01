@@ -14,8 +14,8 @@
                         <div class="nk-block nk-block-middle nk-auth-body">
                             <div class="brand-logo pb-5">
                                 <a href="{{url('/')}}" class="logo-link">
-                                    <img class="logo-light logo-img logo-img-lg" src="{{asset('logo-thesupercode.jpg')}}" srcset="{{asset('logo-thesupercode.jpg')}}" alt="logo">
-                                    <img class="logo-dark logo-img logo-img-lg" src="{{asset('logo-thesupercode.jpg')}}" srcset="{{asset('logo-thesupercode.jpg')}}" alt="logo-dark">
+                                    <img class="logo-light logo-img logo-img-lg" src="{{asset('thesupercode-logo.png')}}" srcset="{{asset('thesupercode-logo.png')}}" alt="logo">
+                                    <img class="logo-dark logo-img logo-img-lg" src="{{asset('thesupercode-logo.png')}}" srcset="{{asset('thesupercode-logo.png')}}" alt="logo-dark">
                                 </a>
                             </div>
                             <div class="nk-block-head">

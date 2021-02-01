@@ -23,6 +23,8 @@ Route::get('terms-condition','Client\PageController@terms_condition');
 Route::get('privacy-policy','Client\PageController@privacy_policy');
 
 
+Route::get('clear-cache','Client\PageController@cache');
+
 
 
 Route::middleware(['webroutes'])->group(function () {
