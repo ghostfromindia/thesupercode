@@ -59,7 +59,7 @@
                     <div class="img-wrap d-none d-md-block ">
                         <div class="owl-carousel-2 owl-carousel">
                             @foreach($channels as $obj)
-                                <img src="@if(!empty($obj->url)) {{asset($obj->url)}} @endif" alt="{{$obj->channel_name}}" style="width: 30px;height: 50px" class="img-fluid">
+                                <img src="@if(!empty($obj->url)) {{asset($obj->url)}} @endif" alt="{{$obj->channel_name}}" style="width: 40px;height: 40px" class="img-fluid">
                                 @if($loop->index == 39) @break @endif
                             @endforeach
                         </div>
