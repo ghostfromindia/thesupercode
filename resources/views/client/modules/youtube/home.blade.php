@@ -56,7 +56,7 @@
             <div class="row align-items-center justify-content-lg-between justify-content-md-center justify-content-sm-center">
 
                 <div class="col-md-12 col-sm-12 col-lg-12">
-                    <div class="img-wrap d-none d-md-block ">
+                    <div class="img-wrap  ">
                         <div class="owl-carousel-2 owl-carousel">
                             @foreach($channels as $obj)
                                 <img src="@if(!empty($obj->url)) {{asset($obj->url)}} @endif" alt="{{$obj->channel_name}}" style="width: 40px;height: 40px" class="img-fluid">

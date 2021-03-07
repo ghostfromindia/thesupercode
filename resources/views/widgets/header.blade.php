@@ -33,7 +33,7 @@
                 <div>
                     <a href="{{url('youtube-analysis/category/'.$obj->slug)}}">
                         <div class="card" style="width: auto">
-                            <div id='head-{{$loop->index}}' class="head" style="    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(19, 6, 30, 0.94)), url({{$obj->youtuber_image()}});
+                            <div id='head-{{$loop->index}}' class="head" style="background-image: url({{$obj->youtuber_image()}});
     width: 100%;
     height: 80px;
     background-size: contain;
