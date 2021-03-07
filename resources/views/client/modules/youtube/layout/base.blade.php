@@ -81,7 +81,7 @@
             $( document ).ready(function() {
                 var element = document.getElementById('head-0');
                 var rect = element.getBoundingClientRect();
-                $('header').attr('style','height:'+rect.bottom+'px')
+                $('header').attr('style','height:'+rect.bottom+'px;margin-bottom:50px;')
                 console.log('asa',rect)
             });
         </script>

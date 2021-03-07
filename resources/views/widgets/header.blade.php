@@ -36,18 +36,15 @@
                             <div id='head-{{$loop->index}}' class="head" style="background-image: url({{$obj->youtuber_image()}});
     width: 100%;
     height: 80px;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;">
-                                <h4 class="small-white-title">
-                                    {{$obj->category_name}}
-                                </h4>
 
                             </div>
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-12 col-12" align="center">
-                                        {{$obj->category_name}}
+                                       <span style="color: black"> {{$obj->category_name}}</span>
                                     </div>
                                 </div>
                             </div>
