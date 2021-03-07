@@ -2,6 +2,7 @@
     $string = preg_replace("/[^ \w]+/", "", url()->current());
     if(file_exists(public_path().'/web/'.$string.'.html')){
         echo  file_get_contents(public_path().'/web/'.$string.'.html');
+        exit;
     }
     ob_start();
 @endphp
@@ -227,6 +228,26 @@ border-top-right-radius: 5px;">
                 dom.removeAttr('class').addClass(font).addClass(color);
             },500)
         </script>
+
+    <script>
+        $(function(){
+            $.each(document.images, function(){
+                var this_image = this;
+                var src = $(this_image).attr('src') || '' ;
+                if(!src.length > 0){
+                    //this_image.src = options.loading; // show loading
+                    var lsrc = $(this_image).attr('lsrc') || '' ;
+                    if(lsrc.length > 0){
+                        var img = new Image();
+                        img.src = lsrc;
+                        $(img).load(function() {
+                            this_image.src = this.src;
+                        });
+                    }
+                }
+            });
+        });
+    </script>
 
     @auth
         @if(Auth::user()->is_admin == 1)

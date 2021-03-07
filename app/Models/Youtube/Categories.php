@@ -4,6 +4,7 @@ namespace App\Models\Youtube;
 
 use App\Traits\ValidationTrait;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
 
 class Categories extends Model
 {
@@ -34,6 +35,23 @@ class Categories extends Model
 
     public function validate($data = null, $ignoreId = 'NULL') {
         return $this->parent_validate($data);
+    }
+
+    public function youtuber_image(){
+        $y = DB::table('youtube_channels as channel')
+            ->join('youtube_statistics','youtube_statistics.channel_id','=','channel.id')
+            ->join('files','files.id','=','channel.channel_profile_image')
+            ->select('subscriber_count','files.url')
+            ->where('channel.primary_category',$this->id)
+            ->orderBy('youtube_statistics.subscriber_count','DESC')
+            ->first();
+
+        if(empty($y)){
+            $url = 'https://i.redd.it/pw3g59c408u51.jpg';
+        }else{
+            $url = asset($y->url);
+        }
+        return $url;
     }
 
 
