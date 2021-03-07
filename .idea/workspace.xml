@@ -2,42 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fb4b42f-7fa8-405b-ae8b-1bfc75d7ad83" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Widgets/Header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/client/youtube/bootstrap-4/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/client/youtube/bootstrap-4/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/client/youtube/bootstrap-4/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/client/youtube/bootstrap-4/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/client/youtube/bootstrap-4/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/client/youtube/bootstrap-4/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/client/youtube/bootstrap-4/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/client/youtube/bootstrap-4/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/client/youtube/bootstrap-4/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/client/youtube/bootstrap-4/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/client/youtube/bootstrap-4/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/client/youtube/bootstrap-4/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/client/youtube/bootstrap-4/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/client/youtube/bootstrap-4/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/client/youtube/bootstrap-4/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/client/youtube/bootstrap-4/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/client/youtube/bootstrap-4/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/client/youtube/bootstrap-4/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/client/youtube/bootstrap-4/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/client/youtube/bootstrap-4/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/client/youtube/custom/common.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/client/youtube/jquery/jquery-3.5.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/client/youtube/owl/owl.carousel.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/client/youtube/owl/owl.carousel.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/client/modules/youtube/components/header.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/client/modules/youtube/layout/base.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/widgets/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/thesupercode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/thesupercode.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Youtube/Categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Youtube/Categories.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/layout/base.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/layout/base.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/modules/youtube/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/modules/youtube/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/client/modules/youtube/components/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/modules/youtube/components/header.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,8 +33,8 @@
       <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/client/modules/youtube/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="92" column="17" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
+            <state relative-caret-position="510">
+              <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
               <folding>
                 <element signature="e#1450#1482#0#HTML" expanded="true" />
                 <element signature="e#2567#2585#0#HTML" expanded="true" />
@@ -97,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/client/youtube/custom/common.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            <state relative-caret-position="170">
+              <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -109,10 +75,15 @@
       <file leaf-file-name="base.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/client/layout/base.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1901">
-              <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
+            <state relative-caret-position="360">
+              <caret line="171" column="27" lean-forward="true" selection-start-line="171" selection-start-column="27" selection-end-line="171" selection-end-column="27" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/client/modules/youtube/components/header.blade.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="base.blade.php" pinned="false" current-in-tab="false">
@@ -228,13 +199,13 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Client/PageController.php" />
         <option value="$PROJECT_DIR$/resources/views/client/layout/base.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/client/modules/youtube/components/header.blade.php" />
         <option value="$PROJECT_DIR$/app/Widgets/Header.php" />
         <option value="$PROJECT_DIR$/app/Models/Youtube/Categories.php" />
         <option value="$PROJECT_DIR$/resources/views/client/modules/youtube/layout/base.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/widgets/header.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/client/modules/youtube/home.blade.php" />
         <option value="$PROJECT_DIR$/public/client/youtube/custom/common.css" />
+        <option value="$PROJECT_DIR$/resources/views/client/modules/youtube/home.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/client/modules/youtube/components/header.blade.php" />
       </list>
     </option>
   </component>
@@ -555,21 +526,7 @@
       <workItem from="1613371911690" duration="1074000" />
       <workItem from="1614091872058" duration="1217000" />
       <workItem from="1614154308986" duration="1335000" />
-      <workItem from="1615095349519" duration="6938000" />
-    </task>
-    <task id="LOCAL-00014" summary="stats data">
-      <created>1607802736733</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1607802736733</updated>
-    </task>
-    <task id="LOCAL-00015" summary="stats data">
-      <created>1607802831099</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1607802831099</updated>
+      <workItem from="1615095349519" duration="7310000" />
     </task>
     <task id="LOCAL-00016" summary="stats data">
       <created>1607803049553</created>
@@ -900,11 +857,25 @@
       <option name="project" value="LOCAL" />
       <updated>1612157795904</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="favicon and icon update">
+      <created>1615111982310</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1615111982311</updated>
+    </task>
+    <task id="LOCAL-00064" summary="youtube ui change">
+      <created>1615112223803</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1615112223803</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147750000" />
+    <option name="totallyTimeSpent" value="148122000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -961,7 +932,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="removing idea folder from track" />
     <MESSAGE value="minor chnage" />
     <MESSAGE value="added by data" />
     <MESSAGE value="front end" />
@@ -986,7 +956,8 @@
     <MESSAGE value="ui update" />
     <MESSAGE value="ui update - some new changes" />
     <MESSAGE value="favicon and icon update" />
-    <option name="LAST_COMMIT_MESSAGE" value="favicon and icon update" />
+    <MESSAGE value="youtube ui change" />
+    <option name="LAST_COMMIT_MESSAGE" value="youtube ui change" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1275,13 +1246,6 @@
     <entry file="file://$PROJECT_DIR$/public/client/youtube/owl/owl.carousel.min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/client/modules/youtube/components/header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/layout/base.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1302,6 +1266,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/client/youtube/custom/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/widgets/header.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -1313,24 +1284,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/client/layout/base.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1901">
-          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/client/modules/youtube/layout/base.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/client/modules/youtube/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="92" column="17" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
+        <state relative-caret-position="510">
+          <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
           <folding>
             <element signature="e#1450#1482#0#HTML" expanded="true" />
             <element signature="e#2567#2585#0#HTML" expanded="true" />
@@ -1346,12 +1303,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/client/youtube/custom/common.css">
+    <entry file="file://$PROJECT_DIR$/resources/views/client/modules/youtube/layout/base.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        <state relative-caret-position="918">
+          <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/client/layout/base.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="171" column="27" lean-forward="true" selection-start-line="171" selection-start-column="27" selection-end-line="171" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/client/modules/youtube/components/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
