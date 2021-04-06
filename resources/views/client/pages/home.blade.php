@@ -260,8 +260,8 @@
                 '<div class="form-group">' +
                 '<label>Enter your name</label>' +
                 '<input type="text" placeholder="Your name" class="name form-control" required />' +
-                '<label>Enter your email address</label>' +
-                '<input type="text" placeholder="Your email address" class="name form-control" required />' +
+                '<label>Enter your phone number</label>' +
+                '<input type="text" placeholder="Your phone number" class="phone form-control" required />' +
                 '</div>' +
                 '</form>',
                 buttons: {
@@ -274,7 +274,18 @@
                                 $.alert('provide a valid name');
                                 return false;
                             }
-                            $.alert('Your name is ' + name);
+                            var phone = this.$content.find('.phone').val();
+                            if(!phone || phone.length != 10){
+                                $.alert('provide a valid number');
+                                return false;
+                            }
+
+                            $.alert('Sending data, please wait');
+
+                            $.post('{{url('save/lead')}}',{_token:'{{csrf_token()}}',name:name,phone:phone}).done(function (data) {
+                                $.alert('Success, We will get back to you soon');
+                            })
+
                         }
                     },
                     cancel: function () {

@@ -30,10 +30,16 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+//    'google' => [
+//        'client_id' => '42726728085-h1o3sek2klfpd6f2dhojmsqtlr3htmj3.apps.googleusercontent.com',
+//        'client_secret' => 'ni0iw1X1uyj5IrKRAyMPWNmX',
+//        'redirect' => 'https://thesupercode.com/login/google/callback',
+//    ],
+
     'google' => [
-        'client_id' => '42726728085-h1o3sek2klfpd6f2dhojmsqtlr3htmj3.apps.googleusercontent.com',
-        'client_secret' => 'ni0iw1X1uyj5IrKRAyMPWNmX',
-        'redirect' => 'https://thesupercode.com/login/google/callback',
+    'client_id' => env('GOOGLE_QUIZ_CLIENT_ID'),
+    'client_secret' => env('GOOGLE_QUIZ_SECRET_ID'),
+    'redirect' => env('GOOGLE_QUIZ_REDIRECT'),
     ]
 
 

@@ -2,10 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fb4b42f-7fa8-405b-ae8b-1bfc75d7ad83" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Quiz/CategoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Quiz/QuestionController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Quiz/QuizController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Mail/LeadDelivery.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Quiz/Answer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Quiz/Category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Quiz/Question.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Quiz/Quiz.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Widgets/QuizHeader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/client/quiz/bootstrap-4/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/client/quiz/bootstrap-4/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/client/quiz/bootstrap-4/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/client/quiz/bootstrap-4/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/client/quiz/bootstrap-4/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/client/quiz/bootstrap-4/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/client/quiz/bootstrap-4/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/client/quiz/bootstrap-4/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/client/quiz/bootstrap-4/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/client/quiz/bootstrap-4/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/client/quiz/bootstrap-4/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/client/quiz/bootstrap-4/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/client/quiz/bootstrap-4/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/client/quiz/bootstrap-4/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/client/quiz/bootstrap-4/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/client/quiz/bootstrap-4/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/client/quiz/bootstrap-4/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/client/quiz/bootstrap-4/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/client/quiz/bootstrap-4/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/client/quiz/bootstrap-4/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/client/quiz/custom/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/client/quiz/jquery/jquery-3.5.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/client/quiz/owl/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/client/quiz/owl/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/modules/quiz/category/form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/modules/quiz/category/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/modules/quiz/category/submenu.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/modules/quiz/quiz/form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/modules/quiz/quiz/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/modules/quiz/quiz/question.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/modules/quiz/quiz/submenu.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/client/modules/quiz/components/header.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/client/modules/quiz/layout/base.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/mails/database_delivery.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/mails/lead_delivery.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/widgets/quiz_header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/client/youtube/custom/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/client/youtube/custom/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/modules/youtube/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/modules/youtube/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/Select2Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Select2Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Client/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/PageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Quiz/QuizController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Quiz/QuizController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/include/siderbar_menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/include/siderbar_menu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/client/layout/base.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/layout/base.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/client/modules/quiz/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/modules/quiz/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/client/modules/quiz/quiz.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/modules/quiz/quiz.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/client/pages/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/pages/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/widgets/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/widgets/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,57 +72,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="header.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/widgets/header.blade.php">
+      <file leaf-file-name="quiz.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/client/modules/quiz/quiz.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="35" column="71" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="71" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#0;n#div#1;n#header#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#0;n#div#1;n#header#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/client/modules/youtube/home.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="82" column="47" lean-forward="true" selection-start-line="82" selection-start-column="47" selection-end-line="82" selection-end-column="47" />
-              <folding>
-                <element signature="e#1450#1482#0#HTML" expanded="true" />
-                <element signature="e#2567#2585#0#HTML" expanded="true" />
-                <element signature="e#2676#2735#0#HTML" expanded="true" />
-                <element signature="e#2727#2747#0#HTML" expanded="true" />
-                <element signature="e#2823#2843#0#HTML" expanded="true" />
-                <element signature="e#3309#3347#0#HTML" expanded="true" />
-                <element signature="e#2961#3005#0#HTML" expanded="true" />
-                <element signature="e#3830#3855#0#HTML" expanded="true" />
-                <element signature="e#4715#4772#0#HTML" expanded="true" />
-                <element signature="e#4874#4931#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Widgets/Header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="35" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="35" />
-              <folding>
-                <element signature="e#32#66#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/client/youtube/custom/common.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
+            <state relative-caret-position="272">
+              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -77,35 +84,76 @@
       <file leaf-file-name="base.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/client/layout/base.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="171" column="27" lean-forward="true" selection-start-line="171" selection-start-column="27" selection-end-line="171" selection-end-column="27" />
+            <state relative-caret-position="34">
+              <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/client/modules/youtube/components/header.blade.php">
+      <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/client/pages/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
+            <state relative-caret-position="323">
+              <caret line="285" column="50" selection-start-line="285" selection-start-column="50" selection-end-line="285" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/client/modules/youtube/layout/base.blade.php">
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+            <state relative-caret-position="442">
+              <caret line="26" column="46" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Categories.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Models/Youtube/Categories.php">
+      <file leaf-file-name="PageController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Client/PageController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="39" column="34" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="34" />
+            <state relative-caret-position="119">
+              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bootstrap/cache/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-357" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mail.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/mail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-408" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="451">
+              <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LeadDelivery.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Mail/LeadDelivery.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lead_delivery.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/mails/lead_delivery.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -114,10 +162,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>./assets</find>
-      <find>top</find>
-      <find>datat</find>
-      <find>datata</find>
       <find>datatable</find>
       <find>da</find>
       <find>;da</find>
@@ -144,6 +188,10 @@
       <find>asset('client/</find>
       <find>width=&quot;5px&quot;</find>
       <find>conta</find>
+      <find>header</find>
+      <find>get a</find>
+      <find>get</find>
+      <find>get a ca</find>
     </findStrings>
     <replaceStrings>
       <replace>src=&quot;{{asset('admin-assets')}}/</replace>
@@ -161,57 +209,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/Select2Controller.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/resources/views/admin/layout/base.blade.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/resources/views/admin/modules/youtube/ytchannel/form.blade.php" />
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/app/Traits/ResourceTrait.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Client/YouTube/YTController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/Youtube/YTController.php" />
-        <option value="$PROJECT_DIR$/app/Models/Youtube/Statistics.php" />
-        <option value="$PROJECT_DIR$/config/services.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Login/LoginController.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/modules/youtube/ytchannel/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/BaseController.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_12_26_134422_crete_table_files.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Controller.php" />
-        <option value="$PROJECT_DIR$/app/Models/Files.php" />
-        <option value="$PROJECT_DIR$/app/Traits/UploaderTrait.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/YTChannelController.php" />
-        <option value="$PROJECT_DIR$/app/Models/Youtube/Channels.php" />
-        <option value="$PROJECT_DIR$/public/client/desktop/assets/css/main.css" />
-        <option value="$PROJECT_DIR$/public/client/style.css" />
-        <option value="$PROJECT_DIR$/resources/views/client/desktop/common/footer.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/client/modules/youtube/date.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/client/modules/youtube/channel.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/client/modules/youtube/category.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Client/Youtube/YTController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/YTCategoryController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/QuizController.php" />
-        <option value="$PROJECT_DIR$/resources/views/client/modules/quiz/home.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Quiz/QuizController.php" />
         <option value="$PROJECT_DIR$/resources/views/client/modules/quiz/category.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/client/desktop/common/header.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/client/pages/terms_condition.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/client/pages/privacy_policy.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/client/pages/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/login/login.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/login/register.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/client/modules/quiz/quiz.blade.php" />
         <option value="$PROJECT_DIR$/public/web/httplocalhostthesupercode.html" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/WebRoutes.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Client/PageController.php" />
-        <option value="$PROJECT_DIR$/resources/views/client/layout/base.blade.php" />
         <option value="$PROJECT_DIR$/app/Widgets/Header.php" />
         <option value="$PROJECT_DIR$/app/Models/Youtube/Categories.php" />
-        <option value="$PROJECT_DIR$/resources/views/client/modules/youtube/layout/base.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/client/modules/youtube/components/header.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/client/modules/youtube/home.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/widgets/header.blade.php" />
         <option value="$PROJECT_DIR$/public/client/youtube/custom/common.css" />
+        <option value="$PROJECT_DIR$/resources/views/client/modules/youtube/layout/base.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/widgets/header.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/client/modules/quiz/components/header.blade.php" />
+        <option value="$PROJECT_DIR$/app/Widgets/QuizHeader.php" />
+        <option value="$PROJECT_DIR$/resources/views/client/modules/quiz/layout/base.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/Quiz/QuizController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/modules/quiz/quiz/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Quiz/CategoryController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/include/siderbar_menu.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/Quiz/CategoryController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/Select2Controller.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/modules/quiz/category/form.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/modules/quiz/quiz/form.blade.php" />
+        <option value="$PROJECT_DIR$/app/Models/Quiz/Answer.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/modules/quiz/quiz/submenu.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/widgets/quiz_header.blade.php" />
+        <option value="$PROJECT_DIR$/app/Models/Quiz/Category.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/Quiz/QuestionController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/modules/quiz/quiz/question.blade.php" />
+        <option value="$PROJECT_DIR$/public/client/quiz/custom/common.css" />
+        <option value="$PROJECT_DIR$/resources/views/client/modules/quiz/home.blade.php" />
+        <option value="$PROJECT_DIR$/app/Models/Quiz/Quiz.php" />
+        <option value="$PROJECT_DIR$/config/services.php" />
+        <option value="$PROJECT_DIR$/app/Models/Quiz/UserQuiz.php" />
+        <option value="$PROJECT_DIR$/app/Models/Quiz/Question.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Quiz/QuizController.php" />
+        <option value="$PROJECT_DIR$/resources/views/client/modules/quiz/quiz.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/client/layout/base.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/mails/lead_delivery.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Client/PageController.php" />
+        <option value="$PROJECT_DIR$/app/Mail/LeadDelivery.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/resources/views/client/pages/home.blade.php" />
       </list>
     </option>
   </component>
@@ -343,10 +391,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="724" />
-    <option name="y" value="-9" />
-    <option name="width" value="1440" />
-    <option name="height" value="766" />
+    <option name="x" value="-7" />
+    <option name="y" value="-7" />
+    <option name="width" value="1549" />
+    <option name="height" value="845" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -371,18 +419,13 @@
               <item name="thesupercode" type="b2602c69:ProjectViewProjectNode" />
               <item name="thesupercode" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Widgets" type="462c0819:PsiDirectoryNode" />
+              <item name="Mail" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="thesupercode" type="b2602c69:ProjectViewProjectNode" />
               <item name="thesupercode" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="thesupercode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="thesupercode" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="thesupercode" type="b2602c69:ProjectViewProjectNode" />
@@ -400,51 +443,7 @@
               <item name="thesupercode" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="thesupercode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="thesupercode" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="thesupercode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="thesupercode" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="youtube" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="thesupercode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="thesupercode" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="youtube" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="thesupercode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="thesupercode" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="youtube" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="thesupercode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="thesupercode" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="widgets" type="462c0819:PsiDirectoryNode" />
+              <item name="mails" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -462,6 +461,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\thesupercode\app\Models" />
       <recent name="C:\xampp\htdocs\thesupercode\app\Http\Controllers\Quiz" />
       <recent name="C:\xampp\htdocs\thesupercode\app\Traits" />
       <recent name="C:\xampp\htdocs\thesupercode\app\Http\Controllers\Client\YouTube" />
@@ -469,10 +469,10 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\thesupercode\resources\views" />
-      <recent name="C:\xampp\htdocs\thesupercode\app" />
-      <recent name="C:\xampp\htdocs\thesupercode\resources\views\client\modules\youtube" />
-      <recent name="C:\xampp\htdocs\thesupercode\resources\views\client\modules\youtube\layout" />
-      <recent name="C:\xampp\htdocs\thesupercode\public\client" />
+      <recent name="C:\xampp\htdocs\thesupercode\app\Mail" />
+      <recent name="C:\xampp\htdocs\thesupercode\app\Models\Quiz" />
+      <recent name="C:\xampp\htdocs\thesupercode\app\Http\Controllers\Quiz" />
+      <recent name="C:\xampp\htdocs\thesupercode\resources\views\admin\modules\quiz" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -532,21 +532,26 @@
       <workItem from="1613371911690" duration="1074000" />
       <workItem from="1614091872058" duration="1217000" />
       <workItem from="1614154308986" duration="1335000" />
-      <workItem from="1615095349519" duration="7531000" />
-    </task>
-    <task id="LOCAL-00018" summary="Auto youtube dumb">
-      <created>1607944059289</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1607944059289</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Auto youtube dumb">
-      <created>1607946089001</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1607946089001</updated>
+      <workItem from="1615095349519" duration="8323000" />
+      <workItem from="1615177578545" duration="1007000" />
+      <workItem from="1615271225776" duration="657000" />
+      <workItem from="1615352014357" duration="604000" />
+      <workItem from="1615449681242" duration="10976000" />
+      <workItem from="1615525659865" duration="688000" />
+      <workItem from="1615659987751" duration="5735000" />
+      <workItem from="1615700783877" duration="1442000" />
+      <workItem from="1615781654260" duration="31000" />
+      <workItem from="1615816629105" duration="2148000" />
+      <workItem from="1615868966730" duration="1583000" />
+      <workItem from="1615964400589" duration="1189000" />
+      <workItem from="1616825245544" duration="4899000" />
+      <workItem from="1616994879633" duration="604000" />
+      <workItem from="1617011845956" duration="803000" />
+      <workItem from="1617034297015" duration="10000" />
+      <workItem from="1617034795192" duration="4303000" />
+      <workItem from="1617082596169" duration="23000" />
+      <workItem from="1617683935011" duration="421000" />
+      <workItem from="1617684387228" duration="376000" />
     </task>
     <task id="LOCAL-00020" summary="Auto youtube dumb">
       <created>1607950857594</created>
@@ -877,11 +882,25 @@
       <option name="project" value="LOCAL" />
       <updated>1615112305391</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="youtube ui change">
+      <created>1615112513081</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1615112513081</updated>
+    </task>
+    <task id="LOCAL-00068" summary="youtube ui change">
+      <created>1615112705058</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1615112705058</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148343000" />
+    <option name="totallyTimeSpent" value="186634000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -891,10 +910,10 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.32897604" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.33333334" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29264393" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.1328976" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10181237" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -913,7 +932,7 @@
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2595949" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15191898" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -923,7 +942,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.33333334" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.25490198" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -978,355 +997,327 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/client/desktop/assets/js/app.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_12_11_114205_create_tracking.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/client/modules/youtube/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="23" selection-end-column="11" />
+        <state relative-caret-position="398">
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_12_26_134422_crete_table_files.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/client/modules/quiz/layout/base.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+        <state relative-caret-position="279">
+          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BaseController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/layout/base.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-983">
-          <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Traits/ResourceTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" selection-start-line="2" selection-end-line="9" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Validation/ValidatesRequests.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-408" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Traits/ValidationTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1272" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/files/youtube/channels/youtuber-image-1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Core/Core_d.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="316" column="22" selection-start-line="316" selection-start-column="21" selection-end-line="316" selection-end-column="22" />
+        <state relative-caret-position="1275">
+          <caret line="75" column="45" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Traits/UploaderTrait.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
-        </state>
+        <state relative-caret-position="-48" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/YTChannelController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="130" column="6" selection-start-line="130" selection-start-column="6" selection-end-line="130" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/PageController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/modules/quiz/category/index.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/client/desktop/assets/css/main.css">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Quiz/CategoryController.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/modules/quiz/category/submenu.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="23550" selection-start-line="23550" selection-end-line="23550" />
+        <state relative-caret-position="34">
+          <caret line="2" column="55" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/client/desktop/common/footer.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/include/siderbar_menu.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="130" selection-start-line="34" selection-start-column="130" selection-end-line="34" selection-end-column="130" />
+        <state relative-caret-position="632">
+          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/client/style.css">
+    <entry file="file://$PROJECT_DIR$/app/Traits/ResourceTrait.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="39" column="23" lean-forward="true" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+        <state relative-caret-position="374">
+          <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
+          <folding>
+            <element signature="e#31#49#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Files.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/modules/youtube/ytchannel/form.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="79" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="79" />
+        <state relative-caret-position="731">
+          <caret line="69" column="46" selection-start-line="56" selection-start-column="39" selection-end-line="69" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Youtube/Statistics.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Youtube/YoutubeCategoryMap.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/Quiz/CategoryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/Select2Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Youtube/Channels.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="45" column="49" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="49" />
+        <state relative-caret-position="632">
+          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="42" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/client/modules/youtube/channel.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/modules/quiz/category/form.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" column="90" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="90" />
+        <state relative-caret-position="340">
+          <caret line="20" column="94" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="94" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/client/modules/youtube/date.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/modules/quiz/quiz/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="41" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="59" />
+        <state relative-caret-position="833">
+          <caret line="49" column="39" selection-end-line="61" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Client/Youtube/YTController.php">
+    <entry file="file://$PROJECT_DIR$/app/Models/Quiz/Answer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="80" selection-start-line="24" selection-start-column="70" selection-end-line="24" selection-end-column="80" />
+        <state relative-caret-position="629">
+          <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/modules/quiz/quiz/submenu.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Widgets/QuizHeader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="27" column="37" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/include/top_header.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/client/modules/quiz/components/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/widgets/quiz_header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Youtube/Categories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="54" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Quiz/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/YTCategoryController.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BaseController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+        <state relative-caret-position="153">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Login/LoginController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/YTChannelController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="83" column="37" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="60" />
+        <state relative-caret-position="629">
+          <caret line="92" column="17" selection-start-line="72" selection-start-column="16" selection-end-line="92" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/client/modules/youtube/category.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/modules/quiz/quiz/question.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="35" selection-end-line="132" selection-end-column="11" />
+        <state relative-caret-position="629">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/client/modules/quiz/category.blade.php">
+    <entry file="file://$PROJECT_DIR$/public/client/quiz/custom/common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="75" selection-end-line="79" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/client/desktop/common/header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="36" selection-end-column="33" />
+        <state relative-caret-position="4403">
+          <caret line="259" column="3" selection-start-line="259" selection-start-column="3" selection-end-line="262" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/client/modules/quiz/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" selection-end-line="79" selection-end-column="11" />
+        <state relative-caret-position="578">
+          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/client/pages/terms_condition.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/Quiz/QuestionController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="612">
+          <caret line="40" column="15" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/client/pages/privacy_policy.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/modules/quiz/quiz/form.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="340">
+          <caret line="20" column="89" selection-start-line="20" selection-start-column="85" selection-end-line="20" selection-end-column="89" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/client/pages/home.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/Quiz/QuizController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="278" column="22" lean-forward="true" selection-start-line="278" selection-start-column="22" selection-end-line="278" selection-end-column="22" />
+        <state relative-caret-position="714">
+          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/login/login.blade.php">
+    <entry file="file://$PROJECT_DIR$/config/services.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+        <state relative-caret-position="646">
+          <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/login/register.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Login/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="163" selection-start-line="19" selection-start-column="163" selection-end-line="19" selection-end-column="163" />
+        <state relative-caret-position="544">
+          <caret line="88" column="9" selection-start-line="63" selection-start-column="8" selection-end-line="88" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Quiz/Quiz.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="38" column="29" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Quiz/UserQuiz.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Quiz/Question.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Quiz/QuizController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="18" column="45" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="45" />
+        <state relative-caret-position="425">
+          <caret line="33" column="38" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/client/modules/quiz/quiz.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="80" column="29" selection-start-line="80" selection-start-column="29" selection-end-line="80" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="66" column="32" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/web/httplocalhostthesupercode.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/WebRoutes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.mix.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Client/PageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/client/youtube/owl/owl.carousel.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/layout/base.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Youtube/Categories.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="39" column="34" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Widgets/Header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="35" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="35" />
-          <folding>
-            <element signature="e#32#66#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/client/modules/youtube/layout/base.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+        <state relative-caret-position="272">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/client/layout/base.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="171" column="27" lean-forward="true" selection-start-line="171" selection-start-column="27" selection-end-line="171" selection-end-column="27" />
+        <state relative-caret-position="34">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/client/modules/youtube/components/header.blade.php">
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
+        <state relative-caret-position="442">
+          <caret line="26" column="46" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/client/modules/youtube/home.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/mails/lead_delivery.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="82" column="47" lean-forward="true" selection-start-line="82" selection-start-column="47" selection-end-line="82" selection-end-column="47" />
-          <folding>
-            <element signature="e#1450#1482#0#HTML" expanded="true" />
-            <element signature="e#2567#2585#0#HTML" expanded="true" />
-            <element signature="e#2676#2735#0#HTML" expanded="true" />
-            <element signature="e#2727#2747#0#HTML" expanded="true" />
-            <element signature="e#2823#2843#0#HTML" expanded="true" />
-            <element signature="e#3309#3347#0#HTML" expanded="true" />
-            <element signature="e#2961#3005#0#HTML" expanded="true" />
-            <element signature="e#3830#3855#0#HTML" expanded="true" />
-            <element signature="e#4715#4772#0#HTML" expanded="true" />
-            <element signature="e#4874#4931#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/widgets/header.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Client/PageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="35" column="71" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="71" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#0;n#div#1;n#header#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#0;n#div#1;n#header#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/client/youtube/custom/common.css">
+    <entry file="file://$PROJECT_DIR$/bootstrap/cache/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
+        <state relative-caret-position="-357" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Mail/LeadDelivery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/client/pages/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="285" column="50" selection-start-line="285" selection-start-column="50" selection-end-line="285" selection-end-column="50" />
         </state>
       </provider>
     </entry>

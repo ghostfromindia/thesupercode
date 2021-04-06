@@ -43,6 +43,24 @@
                         </ul><!-- .nk-menu-sub -->
                     </li><!-- .nk-menu-item -->
 
+
+                    <li class="nk-menu-item has-sub">
+                        <a href="#" class="nk-menu-link nk-menu-toggle">
+                            <span class="nk-menu-icon">
+                                <img src="https://img.icons8.com/emoji/48/000000/question-mark-emoji.png"/>
+                            </span>
+                            <span class="nk-menu-text">Quiz</span>
+                        </a>
+                        <ul class="nk-menu-sub">
+                            <li class="nk-menu-item">
+                                <a href="{{route('admin.quiz.create')}}" class="nk-menu-link"><span class="nk-menu-text">Add new Quiz</span></a>
+                            </li>
+                            <li class="nk-menu-item">
+                                <a href="{{route('admin.qcategory.create')}}" class="nk-menu-link"><span class="nk-menu-text">Add new Category</span></a>
+                            </li>
+                        </ul><!-- .nk-menu-sub -->
+                    </li><!-- .nk-menu-item -->
+
                 </ul><!-- .nk-menu -->
             </div><!-- .nk-sidebar-menu -->
         </div><!-- .nk-sidebar-content -->

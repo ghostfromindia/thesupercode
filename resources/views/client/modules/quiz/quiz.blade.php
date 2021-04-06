@@ -1,4 +1,5 @@
-@extends('client.layout.base')
+@extends('client.modules.quiz.layout.base')
+
 
 @section('title','Answer quiz wim amazing prizes')
 @section('description','Various type of quizes that you can enjoy over the time')
@@ -34,18 +35,21 @@
 
         .quiz-que-title{
              background: url('https://karthiksurya.com/wp-content/uploads/2020/09/edIMG_3808-768x512.jpg');
-             height: 300px;
+             height:250px;
              background-position: center;
              position: relative;
+            line-height: 25px;
          }
 
-        .quiz-que-title span{
+        .quiz-que-title span {
             color: white;
             font-size: 25px;
             font-family: math;
             font-weight: 200;
             padding: 10px;
-            background: linear-gradient(0deg, black, transparent);
+            background: linear-gradient(
+                    0deg
+                    , black, #00000080);
             width: 100%;
             display: block;
             position: absolute;
@@ -59,6 +63,9 @@
             width: 250px;
             text-align: left;
         }
+
+
+
     </style>
 @endsection
 
@@ -67,53 +74,111 @@
 
 
 
-    <div class="container" style="min-height: 500px;margin-top: 20px">
+    <div class="container" style="margin-bottom: 80px">
         <div class="col-md-12" >
 
 
-            <div class="row">
+            <div class="row" id="intro" style="display: block">
                   <div class="col-12 col-md-12">
-                      <h1>Translation by H. Rackham</h1>
-                      <div>
-                          Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-                          The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                      <div class="quiz_banner_image" style="background: url('https://cdn.pixabay.com/photo/2021/03/04/12/19/woman-6067822_960_720.jpg');background-position: center;background-size: cover">
+                          <h1 class="card-title">{{$quiz->title}}</h1>
+                      </div>
+                      <div style="padding: 20px">
+                          {!! $quiz->top_description !!}
+                          {!! $quiz->bottom_description !!}
                        </div>
-                      <hr>
-                       <button class="btn btn-dark m-10">Start</button>
+
+                      @auth
+                          <a href="javascript:void(0)" class="start-quiz">START</a>
+                          @else
+                          <a href="{{url('quiz/login/google')}}" class="start-quiz">Login with google and continue</a>
+                      @endauth
+
                  </div>
             </div>
 
 
-            <div class="row">
-                <div class="col-12 col-md-12">
-                    <div>
-                        @for($i=0;$i<20;$i++)
-                            <a href="">{{$i}}</a>
-                        @endfor
+            <div class="row" id="quiz" style="display: none">
+                    <div class="col-12 col-md-12"  style="margin-bottom: 5px">
+                        <div class="quiz-que-title">
+                            <span id="quiz-title">ABC</span>
+                        </div>
+
+                        <div class="owl-carousel ques-list">
+                            @for($i=1;$i<=count($quiz->questions());$i++)
+                                <div class="qli @if($i==7) qli-current @else qli-wrong @endif">
+                                        <a href="javascript:void(0)" class="ques-list" data-quiz-id="{{encrypt($quiz->id)}}">{{$i}}</a>
+                                </div>
+                            @endfor
+                        </div>
+
                     </div>
-                    <div class="quiz-que-title">
-                        <span>Que 1: What is ab + c = 12 ?
-                        Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.</span>
+                    <div class="col-12 col-md-12 answer">
+                       <a href="javascript:void(0)">by Cicero, written in 45 BC</a>
+                       <a href="javascript:void(0)">Finibus Bonoruus Bonoruus Bonoruusorussm </a>
+                       <a href="javascript:void(0)">exact original form</a>
+                       <a href="javascript:void(0)">during the Renaissance</a>
+
+                        <a>Skip</a>
                     </div>
 
-                    <div>
-                       <button class="btn btn-dark btn-alt">by Cicero, written in 45 BC</button>
-                       <button class="btn btn-dark btn-alt">Finibus Bonorum </button>
-                       <button class="btn btn-dark btn-alt">exact original form</button>
-                       <button class="btn btn-dark btn-alt">during the Renaissance</button>
+                    <a href="javascript:void(0)" class="complete-quiz">START</a>
 
-                        <button class="btn btn-warning btn-alt">Skip</button>
-                    </div>
-                    <hr>
-                    <button class="btn btn-dark m-10">Start</button>
                 </div>
             </div>
 
 
+        <div class="row" id="result" style="display: none">
+            <div class="col-12 col-md-12"  style="margin-bottom: 5px">
+                <div class="quiz-que-title">
+                    <span>10/20</span>
+                </div>
+
+                <div class="">
+                    <ul>
+
+                        @for($i=0;$i<20;$i++)
+                            <li>Rank 1 : USER {{$i}} </li>
+                        @endfor
+                    </ul>
+                </div>
+
+            </div>
 
         </div>
     </div>
 
 
+
+
+
+
+
+    </div>
+    </div>
+
+
+@endsection
+
+@section('bottom')
+
+    <script>
+        $('.start-quiz').on('click', function () {
+            $('#intro').fadeOut();
+            setTimeout(function () {
+                $('#quiz').fadeIn();
+            },1000)
+        })
+
+        $('.ques-list').owlCarousel({
+            loop:false,
+            responsiveClass:true,
+            autoWidth:true,
+            nav : false
+        })
+    </script>
+
+    <script>
+        $()
+    </script>
 @endsection

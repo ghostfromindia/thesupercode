@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\Client;
 
 use App\Http\Controllers\Controller;
+use App\Mail\LeadDelivery;
 use Illuminate\Http\Request;
 use App\Traits\UploaderTrait;
+use Illuminate\Support\Facades\Mail;
 
 class PageController extends Controller
 {
@@ -44,6 +46,14 @@ class PageController extends Controller
         closedir($dir_handle);
         rmdir($dirname);
         return true;
+    }
+
+    public function savelead(Request $request){
+        $data = $request->all();
+
+        $to = 'b2akhilmj@gmail.com';
+        Mail::to($to)->send(new LeadDelivery($request));
+
     }
 
 

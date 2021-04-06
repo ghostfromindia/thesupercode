@@ -24,6 +24,7 @@ Route::get('privacy-policy','Client\PageController@privacy_policy');
 
 
 Route::get('clear-cache','Client\PageController@cache');
+Route::post('save/lead','Client\PageController@savelead');
 
 
 
@@ -53,8 +54,15 @@ Route::middleware(['webroutes'])->group(function () {
     Route::group(['prefix' => 'quiz', 'namespace' => 'Quiz'], function(){
 
             Route::get('/', 'QuizController@home');
+
+            Route::get('login/google', 'QuizController@login');
+            Route::get('login/google/callback', 'QuizController@login_callback');
+
+            Route::get('questions/{id}','QuizController@quiz_get_questions');
+
             Route::get('/category', 'QuizController@category');
             Route::get('{slug}', 'QuizController@quiz');
+
     });
 
     Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function(){
@@ -63,6 +71,7 @@ Route::middleware(['webroutes'])->group(function () {
 
             //Select2 urls
             Route::get('ytcategory_list', 'Select2Controller@ytcategory_list')->name('admin.ytcategory.ytcategory_list');
+            Route::get('qcategory_list', 'Select2Controller@qcategory_list')->name('admin.qcategory.qcategory_list');
 
 
             // Youtube channels
@@ -83,6 +92,30 @@ Route::middleware(['webroutes'])->group(function () {
             Route::get('ytcategory/change-status/{id}', 'YTCategoryController@changeStatus')->name('admin.ytcategory.change-status');
             Route::post('ytcategory/store', 'YTCategoryController@store')->name('admin.ytcategory.store');
             Route::post('ytcategory/update', 'YTCategoryController@update')->name('admin.ytcategory.update');
+
+
+
+            // Youtube channels
+            Route::get('quiz', 'Quiz\QuizController@index')->name('admin.quiz.index');
+            Route::get('quiz/create', 'Quiz\QuizController@create')->name('admin.quiz.create');
+            Route::get('quiz/edit/{id}', 'Quiz\QuizController@edit')->name('admin.quiz.edit');
+            Route::get('quiz/destroy/{id}', 'Quiz\QuizController@destroy')->name('admin.quiz.destroy');
+            Route::get('quiz/change-status/{id}', 'Quiz\QuizController@changeStatus')->name('admin.quiz.change-status');
+            Route::post('quiz/store', 'Quiz\QuizController@store')->name('admin.quiz.store');
+            Route::post('quiz/update', 'Quiz\QuizController@update')->name('admin.quiz.update');
+
+
+            Route::get('qcategory', 'Quiz\CategoryController@index')->name('admin.qcategory.index');
+            Route::get('qcategory/create', 'Quiz\CategoryController@create')->name('admin.qcategory.create');
+            Route::get('qcategory/edit/{id}', 'Quiz\CategoryController@edit')->name('admin.qcategory.edit');
+            Route::get('qcategory/destroy/{id}', 'Quiz\CategoryController@destroy')->name('admin.qcategory.destroy');
+            Route::get('qcategory/change-status/{id}', 'Quiz\CategoryController@changeStatus')->name('admin.qcategory.change-status');
+            Route::post('qcategory/store', 'Quiz\CategoryController@store')->name('admin.qcategory.store');
+            Route::post('qcategory/update', 'Quiz\CategoryController@update')->name('admin.qcategory.update');
+
+            Route::get('quiz/question/{id}/{qid?}', 'Quiz\QuestionController@index')->name('question.create');
+            Route::post('quiz/question/update', 'Quiz\QuestionController@update')->name('question.save');
+            Route::get('quiz/remove/{id}', 'Quiz\QuestionController@remove')->name('question.remove');
 
 
             Route::post('ytcategory/change-category', 'YTCategoryController@change_category');
