@@ -284,6 +284,9 @@
 
                             $.post('{{url('save/lead')}}',{_token:'{{csrf_token()}}',name:name,phone:phone}).done(function (data) {
                                 $.alert('Success, We will get back to you soon');
+                                setTimeout(function () {
+                                    window.location.reload()
+                                },1000)
                             })
 
                         }
