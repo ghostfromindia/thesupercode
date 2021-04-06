@@ -1,6 +1,6 @@
 @php
     $string = preg_replace("/[^ \w]+/", "", url()->current());
-    if(!file_exists(public_path().'/web/'.$string.'.html')){
+    if(file_exists(public_path().'/web/'.$string.'.html')){
         echo  file_get_contents(public_path().'/web/'.$string.'.html');
         exit;
     }
