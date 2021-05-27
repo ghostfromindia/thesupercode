@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9fb4b42f-7fa8-405b-ae8b-1bfc75d7ad83" name="Default" comment="youtube ui change">
-      <change afterPath="$PROJECT_DIR$/resources/views/client/pages/covaxine.blade.php" afterDir="false" />
+    <list default="true" id="9fb4b42f-7fa8-405b-ae8b-1bfc75d7ad83" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Client/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/PageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,8 +29,8 @@
       <file leaf-file-name="PageController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Client/PageController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="70" column="8" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
+            <state relative-caret-position="375">
+              <caret line="78" column="26" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -529,21 +527,7 @@
       <workItem from="1619679150690" duration="169000" />
       <workItem from="1619679423915" duration="1221000" />
       <workItem from="1619758819512" duration="39000" />
-      <workItem from="1622122157049" duration="3255000" />
-    </task>
-    <task id="LOCAL-00023" summary="some ui changes">
-      <created>1607973184989</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1607973184989</updated>
-    </task>
-    <task id="LOCAL-00024" summary="google tag manager updated">
-      <created>1608182445197</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1608182445197</updated>
+      <workItem from="1622122157049" duration="3991000" />
     </task>
     <task id="LOCAL-00025" summary="google analytics">
       <created>1608182977185</created>
@@ -874,11 +858,25 @@
       <option name="project" value="LOCAL" />
       <updated>1617686478999</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="Cowin">
+      <created>1622125481533</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1622125481535</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Cowin">
+      <created>1622126322093</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1622126322094</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196403000" />
+    <option name="totallyTimeSpent" value="197139000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -935,7 +933,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="minor chnage" />
     <MESSAGE value="added by data" />
     <MESSAGE value="front end" />
     <MESSAGE value="front end - issues" />
@@ -960,7 +957,8 @@
     <MESSAGE value="ui update - some new changes" />
     <MESSAGE value="favicon and icon update" />
     <MESSAGE value="youtube ui change" />
-    <option name="LAST_COMMIT_MESSAGE" value="youtube ui change" />
+    <MESSAGE value="Cowin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cowin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1286,8 +1284,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Client/PageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="70" column="8" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
+        <state relative-caret-position="375">
+          <caret line="78" column="26" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
         </state>
       </provider>
     </entry>

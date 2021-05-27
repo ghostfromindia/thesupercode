@@ -76,6 +76,7 @@ class PageController extends Controller
 //curl_setopt($ch, CURLOPT_POSTFIELDS,$body);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $authToken = curl_exec($ch);
+        print_r($authToken);
         return $authToken;
     }
 
