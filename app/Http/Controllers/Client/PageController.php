@@ -58,26 +58,15 @@ class PageController extends Controller
     }
 
     public function date_wise_data($date){
-        $ch = curl_init();
-        $headers = array(
-            'Accept: application/json',
-            'Content-Type: application/json'
 
-        );
-        //date('d-m-Y')
-        $path = 'https://cdn-api.co-vin.in/api/v2/appointment/sessions/calendarByDistrict?district_id=303&date='.$date;
+        try{
+            $path = 'https://cdn-api.co-vin.in/api/v2/appointment/sessions/calendarByDistrict?district_id=303&date='.$date;
+            $data = file_get_contents($path);
+            return $data;
+        }catch (\Exception $e){
 
-        curl_setopt($ch, CURLOPT_URL, $path);
-        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-        curl_setopt($ch, CURLOPT_HEADER, 0);
+        }
 
-//$body = '{}';
-//curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
-//curl_setopt($ch, CURLOPT_POSTFIELDS,$body);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        $authToken = curl_exec($ch);
-        print_r($authToken);
-        return $authToken;
     }
 
     public function covaxin(){
