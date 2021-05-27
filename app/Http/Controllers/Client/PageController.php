@@ -59,12 +59,9 @@ class PageController extends Controller
 
     public function date_wise_data($date){
         $ch = curl_init();
-        $ip = '128.365.268.256';
         $headers = array(
             'Accept: application/json',
-            'Content-Type: application/json',
-            'REMOTE_ADDR: '.$ip,
-            'HTTP_X_FORWARDED_FOR: '.$ip
+            'Content-Type: application/json'
 
         );
         //date('d-m-Y')
