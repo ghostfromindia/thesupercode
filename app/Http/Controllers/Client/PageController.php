@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Client;
 
 use App\Http\Controllers\Controller;
 use App\Mail\LeadDelivery;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Traits\UploaderTrait;
 use Illuminate\Support\Facades\Mail;
@@ -54,6 +55,59 @@ class PageController extends Controller
         $to = 'b2akhilmj@gmail.com';
         Mail::to($to)->send(new LeadDelivery($request));
 
+    }
+
+    public function date_wise_data($date){
+        $ch = curl_init();
+        $ip = '128.365.268.256';
+        $headers = array(
+            'Accept: application/json',
+            'Content-Type: application/json',
+            'REMOTE_ADDR: '.$ip,
+            'HTTP_X_FORWARDED_FOR: '.$ip
+
+        );
+        //date('d-m-Y')
+        $path = 'https://cdn-api.co-vin.in/api/v2/appointment/sessions/calendarByDistrict?district_id=303&date='.$date;
+
+        curl_setopt($ch, CURLOPT_URL, $path);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+        curl_setopt($ch, CURLOPT_HEADER, 0);
+
+//$body = '{}';
+//curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
+//curl_setopt($ch, CURLOPT_POSTFIELDS,$body);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $authToken = curl_exec($ch);
+        return $authToken;
+    }
+
+    public function covaxin(){
+
+
+//        if(session()->has('data')){
+//            $data = session('data');
+//            // dd($data);
+//            return view('client.pages.covaxine',compact('data'));
+//        }
+
+        $date = Carbon::now();
+
+        $data = [];
+        for ($i=0;$i<4;$i++){
+            $d = $this->date_wise_data($date->addDays($i)->format('d-m-Y'));
+            $d = json_decode($d);
+            if(!empty($d->centers)){
+                if(is_array($d->centers)){
+                    $data = array_merge($data,$d->centers);
+                }
+            }
+        }
+
+        session()->put('data',collect($data));
+        // $data = $data->centers;
+
+        return view('client.pages.covaxine',compact('data'));
     }
 
 

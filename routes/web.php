@@ -22,6 +22,8 @@ Route::get('slug-generator','Client\Youtube\YTController@make_category_slug');
 Route::get('terms-condition','Client\PageController@terms_condition');
 Route::get('privacy-policy','Client\PageController@privacy_policy');
 
+Route::get('covaxin-availability-in-kerala','Client\PageController@covaxin');
+
 
 Route::get('clear-cache','Client\PageController@cache');
 Route::post('save/lead','Client\PageController@savelead');
