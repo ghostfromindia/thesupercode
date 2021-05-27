@@ -29,8 +29,8 @@
       <file leaf-file-name="PageController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Client/PageController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="78" column="26" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
+            <state relative-caret-position="137">
+              <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -53,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/resources/views/client/pages/covaxine.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+              <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -527,21 +527,7 @@
       <workItem from="1619679150690" duration="169000" />
       <workItem from="1619679423915" duration="1221000" />
       <workItem from="1619758819512" duration="39000" />
-      <workItem from="1622122157049" duration="3991000" />
-    </task>
-    <task id="LOCAL-00025" summary="google analytics">
-      <created>1608182977185</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1608182977185</updated>
-    </task>
-    <task id="LOCAL-00026" summary="one day query">
-      <created>1608267262286</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1608267262287</updated>
+      <workItem from="1622122157049" duration="4255000" />
     </task>
     <task id="LOCAL-00027" summary="key update">
       <created>1608267569463</created>
@@ -872,11 +858,25 @@
       <option name="project" value="LOCAL" />
       <updated>1622126322094</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="Cowin">
+      <created>1622126434204</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1622126434204</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Cowin">
+      <created>1622126625728</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1622126625728</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="197139000" />
+    <option name="totallyTimeSpent" value="197403000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1278,14 +1278,14 @@
     <entry file="file://$PROJECT_DIR$/resources/views/client/pages/covaxine.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Client/PageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="78" column="26" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
+        <state relative-caret-position="137">
+          <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
         </state>
       </provider>
     </entry>

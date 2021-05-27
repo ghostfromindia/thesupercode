@@ -62,6 +62,7 @@ class PageController extends Controller
         try{
             $path = 'https://cdn-api.co-vin.in/api/v2/appointment/sessions/calendarByDistrict?district_id=303&date='.$date;
             $data = file_get_contents($path);
+            print_r($data);
             return $data;
         }catch (\Exception $e){
 
