@@ -58,26 +58,34 @@ class PageController extends Controller
     }
 
     public function date_wise_data($date){
+        $ch = curl_init();
+        $ip = '128.365.268.256';
+        $headers = array(
+            'Accept: application/json',
+            'Content-Type: application/json',
+            'REMOTE_ADDR: '.$ip,
+            'HTTP_X_FORWARDED_FOR: '.$ip,
+            'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiIxNDY0MzEzYy1iOWQxLTQ0OGItYTE0ZS1jZTU3NGFkNGU1OTciLCJ1c2VyX2lkIjoiMTQ2NDMxM2MtYjlkMS00NDhiLWExNGUtY2U1NzRhZDRlNTk3IiwidXNlcl90eXBlIjoiQkVORUZJQ0lBUlkiLCJtb2JpbGVfbnVtYmVyIjo5NTY3MDc1NjIyLCJiZW5lZmljaWFyeV9yZWZlcmVuY2VfaWQiOjE3MzAzODkxOTUyNTY3LCJzZWNyZXRfa2V5IjoiYjVjYWIxNjctNzk3Ny00ZGYxLTgwMjctYTYzYWExNDRmMDRlIiwic291cmNlIjoiY293aW4iLCJ1YSI6Ik1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZS85MS4wLjQ0NzIuNzcgU2FmYXJpLzUzNy4zNiIsImRhdGVfbW9kaWZpZWQiOiIyMDIxLTA2LTA0VDEyOjE0OjE0LjM1M1oiLCJpYXQiOjE2MjI4MDg4NTQsImV4cCI6MTYyMjgwOTc1NH0.UgqB6e2yZVyFVyAmkapLj0TvMurUgyLAHIXQRnpGwnQ',
 
-        try{
-            $path = 'https://cdn-api.co-vin.in/api/v2/appointment/sessions/calendarByDistrict?district_id=303&date='.$date;
-            $data = file_get_contents($path);
+        );
+        //date('d-m-Y')
+        $path = 'https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=303&date='.$date;
 
-            return $data;
-        }catch (\Exception $e){
-            print_r($e);
-        }
+        curl_setopt($ch, CURLOPT_URL, $path);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+        curl_setopt($ch, CURLOPT_HEADER, 0);
 
+//$body = '{}';
+//curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
+//curl_setopt($ch, CURLOPT_POSTFIELDS,$body);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $authToken = curl_exec($ch);
+        return $authToken;
     }
 
     public function covaxin(){
 
 
-//        if(session()->has('data')){
-//            $data = session('data');
-//            // dd($data);
-//            return view('client.pages.covaxine',compact('data'));
-//        }
 
         $date = Carbon::now();
 

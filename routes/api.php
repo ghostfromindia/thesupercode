@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('categories', 'Api\ApiController@categories');
+Route::get('category_wise','Api\ApiController@category_wise');
+Route::get('ranking','Api\ApiController@ranking');
